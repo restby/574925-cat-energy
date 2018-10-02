@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+  margin-bottom: 22px;
 }
 .promo__text-wrapper {
   background-image: url(../img/index-background-mobile@1x.jpg);
@@ -8,25 +9,19 @@
   margin-bottom: 135px;
 }
 .pormo__title {
-  font-size: 36px;
-  line-height: 36px;
-  color: @cwhite;
+  .fontstyle(36px, 36px, 400, @cwhite);
   .font-fam-o();
-  font-weight: 400;
-  text-align: center;
   .textreset();
+  text-align: center;
   margin-bottom: 23px;
 }
 .promo__slogan {
-  display: block;
-  font-size: 14px;
-  line-height: 14px;
-  color: @cwhite;
+  .textreset();
+  .fontstyle(14px, 14px, 400, @cwhite);
   .font-fam-o();
-  font-weight: 400;
+   display: block;
   text-align: center;
   text-transform: uppercase;
-  .textreset();
 }
 .promo__img {
   position: absolute;
