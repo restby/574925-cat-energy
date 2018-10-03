@@ -39,29 +39,29 @@
           <h1 class="form__title">Подбор прграммы</h1>
           <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <ul class="form__list  data-list">
-            <li class="data-list__item">
+            <li class="data-list__item  data-list__item--name">
               <label class="data-list__label" for="cat-name">Имя:*</label>
               <input class="data-list__input" type="text" id="cat-name" placeholder="Барсик" aria-label="поле для ввода имени">
             </li>
-            <li class="data-list__item">
+            <li class="data-list__item  data-list__item--weight">
               <label class="data-list__label" for="cat-weight">Вес (кг):*</label>
               <input class="data-list__input" type="text" id="cat-weight" placeholder="7" aria-label="поле для ввода веса">
             </li>
-            <li class="data-list__item">
+            <li class="data-list__item  data-list__item--age">
               <label class="data-list__label" for="cat-age">Возраст (лет):</label>
               <input class="data-list__input" type="text" id="cat-age" placeholder="7" aria-label="поле для ввода возраста">
             </li>
           </ul>
           <ul class="form__list  programm-list">
-            <li class="programm-list__item">
+            <li class="programm-list__item  programm-list__item--lose">
               <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-lose" id="programm-lose" aria-label="опция выбора похудение">
               <label class="programm-list__label" for="programm-lose">Похудение</label>
             </li>
-            <li class="programm-list__item">
+            <li class="programm-list__item  programm-list__item--gain">
               <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-gain" id="programm-gain" aria-label="опция выбора набор массы">
               <label class="programm-list__label" for="programm-gain">Набор массы</label>
             </li>
-            <li class="programm-list__item">
+            <li class="programm-list__item  programm-list__item--advice">
               <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-advice" id="programm-advice" aria-label="опция выбора нужен совет">
               <label class="programm-list__label" for="programm-advice">Не знаю (нужен ваш совте)</label>
             </li>
@@ -81,9 +81,10 @@
           </fieldset>
           <fieldset class="form__field  comments-field">
             <legend class="form__legend">Комментарий</legend>
-            <textarea class="form__area  comments-field__area" cols="10" rows="10" placeholder="Расскажите обо всех повадках кота" aria-label="поле для ввода текста обо всех повадках кота"></textarea>
+            <textarea class="form__area  comments-field__area" cols="1" rows="1" placeholder="Расскажите обо всех повадках кота" aria-label="поле для ввода текста обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__field  addition-field">
+            <legend class="form__legend">Дополнительно</legend>
             <ul class="form__list  addition-field__list">
               <li class="addition-field__item">
                 <input class="addition-field__input  visually-hidden  addition-field__input-checkbox" id="sweetener" type="checkbox" name="sweetener" aria-label="опция выбора сахарозаменитель" checked>
@@ -140,14 +141,14 @@
           </ul>
         </div>
         <div class="page-footer__developer  developer">
-          <span class="developer__text">HTML Academy</span>
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-            <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
-          </a>
+          <div class="developer__wrapper">
+            <span class="developer__text">HTML Academy</span>
+            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+              <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="js/script.min.js"></script>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
