@@ -11,15 +11,12 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__bar">
-            <a class="main-nav__logo" href="index.html" aria-label="ссылка на главную страницу">
+            <a class="main-nav__logo" aria-label="текущая странциа">
               <img class="main-nav__logo-pic" width="33" height="38" src="http://placehold.it/33x38" alt="логотип Cat Energy">
               <img class="main-nav__logo-text" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
             </a>
-            <button class="main-nav__btn  main-nav__btn--open" type="button" aria-label="кнопка открыть меню">
+            <button class="main-nav__btn  main-nav__btn--toggle" type="button" aria-label="кнопка переключатель меню">
               <span class="visually-hidden">открыть</span>
-            </button>
-            <button class="main-nav__btn  main-nav__btn--close" type="button" aria-label="кнопка закрыть меню">
-              <span class="visually-hidden">закрыть</span>
             </button>
           </div>
           <ul class="main-nav__list">
@@ -37,10 +34,10 @@
       </nav>
     </header>
     <main class="form-page-main">
-      <h1 class="form-page-main__title">Подбор прграммы</h1>
-      <p class="form-page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__wrapper">
+          <h1 class="form__title">Подбор прграммы</h1>
+          <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <ul class="form__list  data-list">
             <li class="data-list__item">
               <label class="data-list__label" for="cat-name">Имя:*</label>
@@ -107,7 +104,7 @@
             </ul>
           </fieldset>
           <button class="form__btn  link" type="submit" aria-label="кнопка отправить форму">Отправить заявку</button>
-          <small class="form__text">* — Обязательные поля</small>
+          <small class="form__small-text">* — Обязательные поля</small>
         </div>
       </form>
     </main>
