@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Главная странциа. HTML Academy: Cat Energy</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -37,21 +38,23 @@
       <h1 class="visually-hidden">Магазин Cat Energy</h1>
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="pormo__title">Функциональное питание для котов</h2>
-          <b class="promo__slogan">Занялся собой? Займись котом!</b>
-          <img class="promo__img" width="280" height="270" src="http://placehold.it/280x270" alt="промо-изображение">
-          <a class="promo__link" href="form.html" aria-label="ссылка на странциа с формой">Подобрать программу</a>
+          <div class="promo__text-wrapper">
+            <h2 class="pormo__title">Функциональное питание для котов</h2>
+            <b class="promo__slogan">Занялся собой? Займись котом!</b>
+          </div>
+          <img class="promo__img" width="280" height="271" src="http://placehold.it/280x270" alt="промо-изображение">
+          <a class="promo__link  link  link--promo" href="form.html" aria-label="ссылка на странциа с формой">Подобрать программу</a>
         </div>
       </section>
       <div class="features">
         <div class="features__wrapper">
           <ul class="features__list">
-            <li class="features__item">
+            <li class="features__item  features__item--1">
               <h2 class="features__title">Похудение</h2>
               <p class="features__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="features__link" href="catalog.html" aria-label="ссылка на страницу каталога">Каталог SLIM</a>
             </li>
-            <li class="features__item">
+            <li class="features__item  features__item--2">
               <h2 class="features__title">Набор массы</h2>
               <p class="features__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="features__link" href="catalog.html" aria-label="ссылка на страницу каталога">Каталог PRO</a>
@@ -136,14 +139,14 @@
           </ul>
         </div>
         <div class="page-footer__developer  developer">
-          <span class="developer__text">HTML Academy</span>
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-            <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
-          </a>
+          <div class="developer__wrapper">
+            <span class="developer__text">HTML Academy</span>
+            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+              <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="js/script.min.js"></script>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
