@@ -1,12 +1,15 @@
 .info {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 42px;
+}
+
+.info__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .info__title {
   .fontstyle(36px, 60px, 400, @black11);
-  .textreset();
+  .reset-ma-pa();
   margin-bottom: 41px;
 }
 
@@ -15,63 +18,84 @@
 }
 
 .info__item {
-  box-sizing: border-box;
-  position: relative;
-  padding-left: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .info__item--1 {
   margin-bottom: 20px;
-
-  &::before {
-    .before-after();
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: green;
-  }
 }
 
 .info__item--2 {
   margin-bottom: 20px;
-
-  &::before {
-    .before-after();
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: green;
-  }
 }
 
 .info__item--3 {
   margin-bottom: 20px;
-
-  &::before {
-    .before-after();
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: green;
-  }
 }
 
-.info__item--4 {
-  &::before {
-    .before-after();
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: green;
-  }
+.info__pic-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: @link-bgc;
+  position: relative;
+  margin-right: 20px;
 }
 
 .info__desc {
+  width: 200px;
   .fontstyle(14px, 18px, 400, @black44);
-  .textreset();
-  .font-fam-ar();
+  .reset-ma-pa;
+  font-family: @font-arial;
 }
+
+@media (min-width: @tablet-width) {
+  .info {
+    width: auto;
+    padding: 0;
+  }
+
+  .info__wrapper {
+    width: @tablet-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .info__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+  }
+
+  .info__item {
+    width: 324px;
+    margin-right: 0;
+    box-sizing: border-box;
+    display: block;
+
+    &:nth-child(2n+1) {
+      width: 354px;
+      margin-right: 30px;
+    }
+  }
+
+  .info__pic-wrapper {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 37px;
+  }
+
+  .info__desc {
+    width: 245px;
+    margin-bottom: 57px;
+    .fontstyle(16px, 24px, 400, @black44);
+  }
+}
+
+// @media (min-width: @desktop-width) {
+
+// }

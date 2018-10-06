@@ -1,7 +1,11 @@
 .features {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 32px;
+  padding: 0 20px;
+}
+
+.features__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .features__list {
@@ -9,11 +13,12 @@
 }
 
 .features__item {
-  background-color: @greybgc;
+  background-color: @grey-bgc;
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid transparent;
+  margin-bottom: 20px;
 }
 
 .features__item--1 {
@@ -21,17 +26,17 @@
 }
 
 .features__title {
-  .textreset();
+  .reset-ma-pa();
   .fontstyle(24px, 37px, 400, @black11);
   text-transform: uppercase;
   margin-bottom: 37px;
-  padding-left: 92px;
+  padding-left: 72px;
 }
 
 .features__desc {
-  .textreset();
+  .reset-ma-pa();
   .fontstyle(14px, 18px, 400, @black44);
-  .font-fam-ar();
+  font-family: @font-arial;
   padding-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
   margin-bottom: 20px;
@@ -39,10 +44,67 @@
 
 .features__link {
   .fontstyle(16px, 16px, 400, @black11);
-  .linkreset();
+  text-decoration: none;
   display: block;
   width: 121px;
   position: relative;
   text-transform: uppercase;
   margin-bottom: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    width: auto;
+    padding: 0;
+  }
+
+  .features__wrapper {
+    width: @tablet-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .features__item {
+    margin-bottom: 30px;
+  }
+
+  .features__title {
+    padding-left: 0;
+    .fontstyle(36px, 37px, 400, @black11);
+  }
+
+  .features__desc {
+    border-bottom: 0;
+    .fontstyle(16px, 24px, 400, @black44);
+  }
+
+  .features__desc--slim {
+    padding-right: 285px;
+  }
+
+  .features__desc--pro {
+    padding-right: 313px;
+  }
+
+  .features__link {
+    .fontstyle(20px, 20px, 400, @black11);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+  .features__desc {
+    padding: 0;
+  }
 }
