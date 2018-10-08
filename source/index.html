@@ -45,7 +45,7 @@
             <b class="promo__slogan">Занялся собой? Займись котом!</b>
           </div>
           <img class="promo__img  promo__img--mobile" width="280" height="271" src="http://placehold.it/280x270" alt="промо-изображение">
-          <img class="promo__img  promo__img--desktop" width="709" height="609" src="http://placehold.it/709x609" alt="промо-изображение">
+          <img class="promo__img  promo__img--tablet" width="709" height="609" src="http://placehold.it/709x609" alt="промо-изображение">
           <a class="promo__link  link  link--promo" href="form.html" aria-label="ссылка на странциа с формой">Подобрать программу</a>
         </div>
       </section>
@@ -94,18 +94,19 @@
           <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__inner">
             <ul class="example__list">
-              <li class="example__item">
+              <li class="example__item  example__item--1">
                 <span class="example__value">5кг</span>
-                <span class="example__field">снижение веса</span>
+                <span class="example__field  example__field--1">снижение веса</span>
               </li>
-              <li class="example__item">
+              <li class="example__item  example__item--2">
                 <span class="example__value">60дней</span>
-                <span class="example__field">затрачено времени</span>
+                <span class="example__field  example__field--2">затрачено времени</span>
               </li>
             </ul>
             <b class="example__text">Затраты на питание: 15 000 руб.</b>
           </div>
-          <img class="example__img" width="311" height="232" src="http://placehold.it/311x232" alt="изображение для сравнения">
+          <img class="example__img  example__img--before" width="311" height="232" src="http://placehold.it/311x232" alt="изображение для сравнения">
+          <img class="example__img  example__img--after" width="251" height="240" src="http://placehold.it/251x240" alt="изображение для сравнения">
           <div class="example__slider">
             <span class="example__toggle-text  example__toggle-text--prev">Было</span>
             <div class="example__bar">
@@ -115,39 +116,44 @@
           </div>
         </div>
       </section>
+      <div class="contacts">
+        <div class="contacts__wrapper">
+          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+      </div>
+      <div class="map">
+        <div class="map__wrapper">
+          <img class="map__img  map__img--mobile" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="map__img  map__img--tablet" width="767" height="400" src="http://placehold.it/767x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts  contacts">
-          <div class="contacts__wrapper">
-            <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
-        </div>
-        <div class="page-footer__map  map">
-          <img class="map__img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </div>
         <a class="page-footer__logo" href="index.html" aria-label="ссылка на главную страницу">
           <img class="page-footer__logo-img" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
         </a>
         <div class="page-footer__social  social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
-                <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
-                <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
-                <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
-              </a>
-            </li>
-          </ul>
+          <div class="social__wrapper">
+            <ul class="social__list">
+              <li class="social__item  social__item--vk">
+                <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
+                  <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
+                </a>
+              </li>
+              <li class="social__item  social__item--insta">
+                <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
+                  <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
+                </a>
+              </li>
+              <li class="social__item  social__item--fb">
+                <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
+                  <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-footer__developer  developer">
           <div class="developer__wrapper">

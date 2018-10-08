@@ -1,11 +1,13 @@
 .example {
-  background-color: @grey-bgc;
   margin-bottom: 31px;
 }
 
 .example__wrapper {
-  width: 280px;
+  background-color: @grey-bgc;
+  width: @mobile-width;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .example__title {
@@ -31,6 +33,13 @@
 
 .example__item {
   width: 123px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  text-align: center;
+  border: 1px solid @dark-grey;
+  border-radius: 4px;
+  position: relative;
 }
 
 .example__value {
@@ -40,6 +49,14 @@
 }
 
 .example__field {
+  width: 87px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  position: absolute;
+  background-color: @grey-bgc;
+  bottom: 0;
+  left: 18px;
+  margin-bottom: -17px;
   .fontstyle(12px, 12px, 400, @black11);
   font-family: @font-arial;
   text-align: center;
@@ -52,9 +69,44 @@
   text-align: center;
 }
 
+.example__img {
+  margin-bottom: 35px;
+}
+
+.example__img--after {
+  display: none;
+}
+
+.example__slider {
+  display: flex;
+  align-items: flex-start;
+}
+
 .example__toggle-text {
   .fontstyle(16px, 20px, 400, @black11);
   text-transform: uppercase;
+}
+
+.example__toggle-text--prev {
+  margin-left: 44px;
+  margin-right: 19px;
+}
+
+.example__bar {
+  width: 84px;
+  height: 14px;
+  border-radius: 10px;
+  border: 1px solid @dark-grey;
+  margin-right: 18px;
+  padding: 3px 5px;
+  box-sizing: border-box;
+}
+
+.example__toggle {
+  width: 35px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: @link-bgc;
 }
 
 @media (min-width: @tablet-width) {
@@ -62,20 +114,24 @@
     width: auto;
     padding: 0;
     background-color: @white;
+    margin: 0;
   }
 
   .example__wrapper {
     width: @tablet-width;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0;
+    background-color: @white;
   }
 
   .example__title {
+    padding: 0 30px;
     .fontstyle(60px, 60px, 400, @black11);
   }
 
   .example__desc {
+    padding: 0 30px;
     .fontstyle(16px, 24px, 400, @black44);
   }
 
@@ -83,24 +139,125 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 255px;
+    padding: 0 30px;
   }
 
   .example__list {
+    width: 366px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 384px;
-    padding-right: 18px;
+  }
+
+  .example__item {
+    width: 162px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+
+  .example__item--1 {
+    margin-right: 42px;
+  }
+
+  .example__value {
+    .fontstyle(30px, 37px, 400, @black11);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .example__field {
+    background-color: @white;
+    .fontstyle(14px, 14px, 400, @black11);
+    margin-bottom: -5px;
+  }
+
+  .example__field--1 {
+    width: 114px;
+    padding: 0 8px;
+    left: 23px;
+  }
+
+  .example__field--2 {
+    width: 142px;
+    padding: 0 6px;
+    left: 9px;
   }
 
   .example__text {
     width: 192px;
     .fontstyle(20px, 20px, 400, @black11);
+    text-align: right;
   }
 
-  .example__img {
-    display: block;
-    margin: 0 auto;
+  /***/
+  .example__img--before {
+    width: 354px;
+    height: 620px;
+    display: none;
+  }
+
+  .example__img--after {
+    width: 354px;
+    height: 607px;
+    display: none;
+  }
+  /***/
+
+  .example__slider {
+    justify-content: space-between;
+    background: linear-gradient(90deg, @grey-bgc 0%, @grey-bgc 50%, #eaeaea 50%, #eaeaea 100%);
+    padding-top: 369px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .example__toggle-text {
+    .fontstyle(20px, 20px, 400, @black11);
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .example__toggle-text--prev {
+    margin: 0;
+    margin-right: 24px;
+  }
+
+  .example__bar {
+    width: 428px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #dcdcdc;
+    border: 0;
+    margin-right: auto;
+    margin-bottom: 81px;
+    position: relative;
+  }
+
+  .example__toggle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -16px;
+    margin-top: -16px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid @dark-grey;
+    border-radius: 50%;
+    background-color: @white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::before {
+      .before-after();
+      left: 50%;
+      top: 50%;
+      margin-left: -4px;
+      margin-top: -4px;
+      width: 8px;
+      height: 8px;
+      background-color: @link-bgc;
+      border-radius: 50%;
+    }
   }
 }
 

@@ -1,5 +1,6 @@
 .contacts {
   padding-bottom: 31px;
+  background-color: @white;
 }
 
 .contacts__wrapper {
@@ -25,18 +26,20 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
-    width: auto;
-    margin: 0;
+    padding: 0 30px;
   }
 
   .contacts__wrapper {
     width: @tablet-width;
     box-sizing: border-box;
+    padding: 0 42px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding-top: 66px;
+    margin-bottom: 60px;
   }
 
   .contacts__slogan {
+    padding-top: 3px;
     .fontstyle(20px, 25px, 400, @black11);
   }
 
