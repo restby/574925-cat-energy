@@ -3,27 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Главная странциа. HTML Academy: Cat Energy</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__bar">
-            <a class="main-nav__logo" aria-label="текущая странциа">
-              <img class="main-nav__logo-pic" width="33" height="38" src="http://placehold.it/33x38" alt="логотип Cat Energy">
-              <img class="main-nav__logo-text" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
-              <img class="main-nav__logo-img" width="173" height="58" src="http://placehold.it/173x58" alt="логотип Cat Energy">
+            <a class="main-nav__logo" aria-label="текущая страница">
+              <img class="main-nav__logo-img" width="191" height="38" src="http://placehold.it/191x38" alt="логотип Cat Energy">
             </a>
             <button class="main-nav__btn  main-nav__btn--toggle" type="button" aria-label="кнопка переключатель меню">
               <span class="visually-hidden">открыть</span>
             </button>
           </div>
           <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--main  main-nav__item--active">
-              <a class="main-nav__link" aria-label="текущая странциа">Главная</a>
+            <li class="main-nav__item  main-nav__item--main">
+              <a class="main-nav__link  main-nav__link--active" aria-label="текущая страница">Главная</a>
             </li>
             <li class="main-nav__item  main-nav__item--catalog">
               <a class="main-nav__link" href="catalog.html" aria-label="ссылка на страницу с каталогом продукции">Каталог продукции</a>
@@ -39,13 +36,10 @@
       <h1 class="visually-hidden">Магазин Cat Energy</h1>
       <section class="promo">
         <div class="promo__wrapper">
-          <div class="promo__text-wrapper">
-            <h2 class="pormo__title">Функциональное<br>
+          <h2 class="pormo__title">Функциональное<br>
             питание для котов</h2>
-            <b class="promo__slogan">Занялся собой? Займись котом!</b>
-          </div>
-          <img class="promo__img  promo__img--mobile" width="280" height="271" src="http://placehold.it/280x270" alt="промо-изображение">
-          <img class="promo__img  promo__img--tablet" width="709" height="609" src="http://placehold.it/709x609" alt="промо-изображение">
+          <b class="promo__slogan">Занялся собой? Займись котом!</b>
+          <img class="promo__img" width="280" height="270" src="http://placehold.it/280x270" alt="промо-изображение">
           <a class="promo__link  link  link--promo" href="form.html" aria-label="ссылка на странциа с формой">Подобрать программу</a>
         </div>
       </section>
@@ -103,29 +97,35 @@
                 <span class="example__field  example__field--2">затрачено времени</span>
               </li>
             </ul>
-            <b class="example__text">Затраты на питание: 15 000 руб.</b>
+            <b class="example__text">
+              <span>Затраты на питание: </span>
+              <span>15 000 руб.</span>
+            </b>
           </div>
           <img class="example__img  example__img--before" width="311" height="232" src="http://placehold.it/311x232" alt="изображение для сравнения">
           <img class="example__img  example__img--after" width="251" height="240" src="http://placehold.it/251x240" alt="изображение для сравнения">
           <div class="example__slider">
-            <span class="example__toggle-text  example__toggle-text--prev">Было</span>
+            <button class="example__toggle-btn  example__toggle-btn--prev" type="button">Было</button>
             <div class="example__bar">
               <div class="example__toggle"></div>
             </div>
-            <span class="example__toggle-text  example__toggle-text--next">Стало</span>
+            <button class="example__toggle-btn  example__toggle-btn--next" type="button">Стало</button>
           </div>
         </div>
       </section>
       <div class="contacts">
         <div class="contacts__wrapper">
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__slogan">Приглашаем<br>
+          к сотрудничеству<br>
+          дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<br>
+          <br>
+          Санкт-Петербург</p>
         </div>
       </div>
       <div class="map">
         <div class="map__wrapper">
-          <img class="map__img  map__img--mobile" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          <img class="map__img  map__img--tablet" width="767" height="400" src="http://placehold.it/767x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="map__img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </div>
     </main>
@@ -158,8 +158,8 @@
         <div class="page-footer__developer  developer">
           <div class="developer__wrapper">
             <span class="developer__text">HTML Academy</span>
-            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-              <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
+            <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+              <img class="developer__img" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
             </a>
           </div>
         </div>

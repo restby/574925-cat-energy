@@ -5,15 +5,8 @@
 
 .map__img {
   display: block;
-}
-
-.map__img--mobile {
   width: 320px;
   height: 400px;
-}
-
-.map__img--tablet {
-  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,17 +14,19 @@
     width: @tablet-width;
   }
 
-  .map__img--mobile {
-    display: none;
-  }
-
-  .map__img--tablet {
-    display: block;
+  .map__img {
     width: 767px;
     height: 400px;
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .map__wrapper {
+    width: @desktop-width;
+  }
 
-// }
+  .map__img {
+    width: 1440px;
+    height: 400px;
+  }
+}

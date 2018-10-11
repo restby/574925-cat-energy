@@ -1,53 +1,96 @@
 .contacts {
-  padding-bottom: 31px;
   background-color: @white;
+  padding-top: 29px;
 }
 
 .contacts__wrapper {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
+  width: @mobile-width;
   padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .contacts__slogan {
+  width: 140px;
   .fontstyle(16px, 20px, 400, @black11);
   .reset-ma-pa();
   text-transform: uppercase;
 }
 
 .contacts__adress {
+  width: 140px;
   .fontstyle(14px, 20px, 400, @black44);
   .reset-ma-pa();
   font-family: @font-arial;
 }
 
+.contacts__adress br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .contacts {
-    padding: 0 30px;
+    padding-top: 67px;
   }
 
   .contacts__wrapper {
+    align-items: flex-start;
     width: @tablet-width;
-    box-sizing: border-box;
-    padding: 0 42px;
-    margin: 0 auto;
-    padding-top: 66px;
-    margin-bottom: 60px;
+    padding: 0 30px;
+    margin-bottom: 61px;
   }
 
   .contacts__slogan {
-    padding-top: 3px;
+    width: 192px;
+    margin-left: 42px;
+    margin-right: auto;
     .fontstyle(20px, 25px, 400, @black11);
   }
 
   .contacts__adress {
+    width: 192px;
+    margin-right: 42px;
     .fontstyle(16px, 20px, 400, @black44);
+  }
+
+  .contacts__adress br {
+    display: inline;
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .contacts {
+    padding-top: 0;
+    position: absolute;
+    left: 40px;
+    top: 2000px;
+    background-color: @white;
+  }
 
-// }
+  .contacts__wrapper {
+    width: 570px;
+    padding: 0;
+    padding-top: 67px;
+    padding-bottom: 61px;
+    margin-bottom: 0;
+  }
+
+  .contacts__slogan {
+    width: 245px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: 80px;
+    padding-left: 77px;
+    .fontstyle(20px, 25px, 400, @black11);
+  }
+
+  .contacts__adress {
+    width: 245px;
+    box-sizing: border-box;
+    margin: 0;
+    padding-right: 77px;
+    .fontstyle(16px, 20px, 400, @black44);
+  }
+}

@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .features__wrapper {
@@ -14,15 +14,35 @@
 
 .features__item {
   background-color: @grey-bgc;
-  padding-top: 40px;
+  padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid transparent;
-  margin-bottom: 20px;
+  position: relative;
 }
 
-.features__item--1 {
+.features__item--slim {
   margin-bottom: 20px;
+
+  &::before {
+    .before-after();
+    width: 50px;
+    height: 53px;
+    top: 22px;
+    left: 22px;
+    background-color: #68b738;
+  }
+}
+
+.features__item--pro {
+  &::before {
+    .before-after();
+    width: 67px;
+    height: 50px;
+    top: 24px;
+    left: 13px;
+    background-color: #68b738;
+  }
 }
 
 .features__title {
@@ -30,30 +50,45 @@
   .fontstyle(24px, 37px, 400, @black11);
   text-transform: uppercase;
   margin-bottom: 37px;
-  padding-left: 72px;
+  margin-left: 72px;
 }
 
 .features__desc {
   .reset-ma-pa();
   .fontstyle(14px, 18px, 400, @black44);
   font-family: @font-arial;
-  padding-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+  padding-bottom: 24px;
 }
 
 .features__link {
   .fontstyle(16px, 16px, 400, @black11);
   text-decoration: none;
   display: block;
-  width: 121px;
+  width: 140px;
+  box-sizing: border-box;
   position: relative;
   text-transform: uppercase;
   margin-bottom: 21px;
-  padding-right: 49px;
+  padding-right: 25px;
+
+  &::after {
+    .before-after();
+    width: 24px;
+    height: 11px;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    background-color: red;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .features {
+    margin-bottom: 51px;
+  }
+
   .features__wrapper {
     width: @tablet-width;
     box-sizing: border-box;
@@ -62,48 +97,138 @@
   }
 
   .features__item {
+    padding: 0;
+    padding-top: 81px;
+    padding-left: 52px;
+  }
+
+  .features__item--slim {
     margin-bottom: 30px;
+    padding-right: 280px;
+
+    &::before {
+      .before-after();
+      width: 200px;
+      height: 212px;
+      top: 80px;
+      left: 446px;
+      background-color: #68b738;
+    }
+  }
+
+  .features__item--pro {
+    padding-right: 312px;
+
+    &::before {
+      .before-after();
+      width: 268px;
+      height: 200px;
+      top: 91px;
+      left: 412px;
+      background-color: #68b738;
+    }
   }
 
   .features__title {
-    padding-left: 0;
     .fontstyle(36px, 37px, 400, @black11);
+    margin-bottom: 26px;
   }
 
   .features__desc {
     border-bottom: 0;
     .fontstyle(16px, 24px, 400, @black44);
+    margin-bottom: 51px;
     padding: 0;
   }
 
-  .features__desc--slim {
-    padding-right: 285px;
-  }
-
-  .features__desc--pro {
-    padding-right: 313px;
-  }
-
   .features__link {
+    width: 300px;
     .fontstyle(20px, 20px, 400, @black11);
     margin-bottom: 62px;
-    padding-right: 49px;
+    padding-right: 190px;
+
+    &::after {
+      .before-after();
+      width: 24px;
+      height: 11px;
+      right: 146px;
+      top: 50%;
+      margin-top: -5px;
+      background-color: red;
+    }
   }
 }
 
-// @media (min-width: @desktop-width) {
-//   .features__list {
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: space-between;
-//   }
+@media (min-width: @desktop-width) {
+  .features {
+    margin-bottom: 79px;
+  }
 
-//   .features__item {
-//     width: 570px;
-//     box-sizing: border-box;
-//   }
+  .features__wrapper {
+    width: @desktop-width;
+    padding: 0 40px;
+  }
 
-//   .features__desc {
-//     padding: 0;
-//   }
-// }
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    width: 570px;
+    padding: 0;
+    padding-top: 81px;
+    padding-left: 52px;
+    padding-right: 53px;
+    box-sizing: border-box;
+  }
+
+  .features__item--slim {
+    margin-bottom: 0;
+
+    &::before {
+      .before-after();
+      width: 100px;
+      height: 106px;
+      top: 41px;
+      left: 52px;
+      background-color: #68b738;
+    }
+  }
+
+  .features__item--pro {
+    &::before {
+      .before-after();
+      width: 134px;
+      height: 100px;
+      top: 47px;
+      left: 34px;
+      background-color: #68b738;
+    }
+  }
+
+  .features__title {
+    margin-bottom: 79px;
+    margin-left: 164px;
+  }
+
+  .features__desc {
+    margin-bottom: 36px;
+  }
+
+  .features__link {
+    width: 193px;
+    padding-right: 80px;
+    margin-bottom: 62px;
+
+    &::after {
+      .before-after();
+      width: 24px;
+      height: 11px;
+      right: 37px;
+      top: 50%;
+      margin-top: -5px;
+      background-color: red;
+    }
+  }
+}

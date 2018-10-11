@@ -5,6 +5,7 @@
 .main-nav__wrapper {
   width: @mobile-width;
   margin: 0 auto;
+  padding-top: 11px;
 }
 
 .main-nav__bar {
@@ -15,24 +16,14 @@
 }
 
 .main-nav__logo {
-  display: flex;
-  align-items: flex-start;
-}
-
-.main-nav__logo-pic {
-  width: 33px;
-  height: 38px;
-  margin-right: 57px;
-}
-
-.main-nav__logo-text {
-  width: 128px;
-  height: 24px;
-  margin-right: 68px;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 
 .main-nav__logo-img {
-  display: none;
+  display: block;
+  width: 191px;
+  height: 38px;
 }
 
 .main-nav__list {
@@ -61,6 +52,7 @@
     width: @tablet-width;
     box-sizing: border-box;
     padding: 0 30px;
+    padding-top: 24px;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -71,18 +63,13 @@
     width: 192px;
     border: 0;
     padding: 0;
-  }
-
-  .main-nav__logo-pic {
-    display: none;
-  }
-
-  .main-nav__logo-text {
-    display: none;
+    display: block;
   }
 
   .main-nav__logo-img {
     display: block;
+    width: 173px;
+    height: 58px;
   }
 
   .main-nav__btn {
@@ -92,6 +79,7 @@
   .main-nav__list {
     width: 516px;
     padding-left: 77px;
+    padding-top: 20px;
     display: flex;
     align-items: flex-start;
     box-sizing: border-box;
@@ -113,20 +101,45 @@
     .fontstyle(18px, 24px, 400, @black22);
     padding: 0;
   }
+
+  .main-nav__link--active {
+    padding-bottom: 9px;
+    border-bottom: 2px solid @link-bgc;
+  }
 }
 
-// @media (min-width: @desktop-width) {
-//   .main-nav__bar {
-//     width: 245px;
-//   }
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: @desktop-width;
+    padding: 0 40px;
+    padding-top: 54px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
 
-//   .main-nav__logo-img {
-//     width: 202px;
-//     height: 59px;
-//   }
+  .main-nav__bar {
+    width: 245px;
+  }
 
-//   .main-nav__link {
-//     .fontstyle(20px, 24px, 400, @white);
-//     padding: 0;
-//   }
-// }
+  .main-nav__list {
+    width: 570px;
+    padding-left: 92px;
+    padding-top: 11px;
+  }
+
+  .main-nav__item--main {
+    margin-right: 38px;
+  }
+
+  .main-nav__link {
+    .fontstyle(20px, 24px, 400, @white);
+    padding: 0;
+  }
+
+  .main-nav__link--active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid @white;
+  }
+}
