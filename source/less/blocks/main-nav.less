@@ -138,8 +138,16 @@
     padding: 0;
   }
 
+  .main-nav__link--catalog {
+    .fontstyle(20px, 24px, 400, @black11);
+  }
+
   .main-nav__link--active {
     padding-bottom: 10px;
     border-bottom: 2px solid @white;
+  }
+
+  .main-nav__link--catalog.main-nav__link--active {
+    border-bottom: 2px solid @link-bgc;
   }
 }

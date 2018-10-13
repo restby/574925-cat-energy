@@ -11,23 +11,22 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__bar">
-            <a class="main-nav__logo" aria-label="текущая странциа">
-              <img class="main-nav__logo-pic" width="33" height="38" src="http://placehold.it/33x38" alt="логотип Cat Energy">
-              <img class="main-nav__logo-text" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
+            <a class="main-nav__logo" href="index.html"aria-label="сcылка на главную страницу">
+              <img class="main-nav__logo-img" width="191" height="38" src="http://placehold.it/191x38" alt="логотип Cat Energy">
             </a>
             <button class="main-nav__btn  main-nav__btn--toggle" type="button" aria-label="кнопка переключатель меню">
               <span class="visually-hidden">открыть</span>
             </button>
           </div>
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html" aria-label="ссылка на главную страницу">Главная</a>
+            <li class="main-nav__item  main-nav__item--main">
+              <a class="main-nav__link  main-nav__link--form" href="index.html" aria-label="сcылка на главную страницу">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html" aria-label="ссылка на страницу с каталогом продукции">Каталог продукции</a>
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a class="main-nav__link  main-nav__link--form" href="catalog.html" aria-label="ссылка на страницу с каталогом продукции">Каталог продукции</a>
             </li>
-            <li class="main-nav__item  main-nav__item--active">
-              <a class="main-nav__link" aria-label="текущая странциа">Подбор программы</a>
+            <li class="main-nav__item  main-nav__item--form">
+              <a class="main-nav__link  main-nav__link--form  main-nav__link--active" aria-label="текущая страница">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -38,86 +37,93 @@
         <div class="form__wrapper">
           <h1 class="form__title">Подбор прграммы</h1>
           <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <ul class="form__list  data-list">
-            <li class="data-list__item  data-list__item--name">
-              <label class="data-list__label" for="cat-name">Имя:*</label>
-              <input class="data-list__input" type="text" id="cat-name" placeholder="Барсик" aria-label="поле для ввода имени">
-            </li>
-            <li class="data-list__item  data-list__item--weight">
-              <label class="data-list__label" for="cat-weight">Вес (кг):*</label>
-              <input class="data-list__input" type="text" id="cat-weight" placeholder="7" aria-label="поле для ввода веса">
-            </li>
-            <li class="data-list__item  data-list__item--age">
-              <label class="data-list__label" for="cat-age">Возраст (лет):</label>
-              <input class="data-list__input" type="text" id="cat-age" placeholder="7" aria-label="поле для ввода возраста">
-            </li>
-          </ul>
-          <ul class="form__list  programm-list">
-            <li class="programm-list__item  programm-list__item--lose">
-              <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-lose" id="programm-lose" aria-label="опция выбора похудение">
-              <label class="programm-list__label" for="programm-lose">Похудение</label>
-            </li>
-            <li class="programm-list__item  programm-list__item--gain">
-              <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-gain" id="programm-gain" aria-label="опция выбора набор массы">
-              <label class="programm-list__label" for="programm-gain">Набор массы</label>
-            </li>
-            <li class="programm-list__item  programm-list__item--advice">
-              <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-advice" id="programm-advice" aria-label="опция выбора нужен совет">
-              <label class="programm-list__label" for="programm-advice">Не знаю (нужен ваш совте)</label>
-            </li>
-          </ul>
-          <fieldset class="form__field  user-data">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <ul class="form__list  user-data__list">
-              <li class="user-data__item">
-                <label class="user-data__label" for="email">E-mail:*</label>
-                <input class="user-data__input" id="email" type="text" placeholder="kuklachev@gmail.com" aria-label="поле для ввода эл.почты">
+          <fieldset class="form__field  form__field--data">
+            <ul class="worksheet-list">
+              <li class="worksheet-list__item  worksheet-list__item--name">
+                <label class="worksheet-list__label" for="cat-name">Имя:*</label>
+                <input class="worksheet-list__input  worksheet-list__input--name" type="text" id="cat-name" placeholder="Барсик" aria-label="поле для ввода имени">
               </li>
-              <li class="user-data__item">
-                <label class="user-data__label" for="phone-number">Телефон:*</label>
-                <input class="user-data__input" id="phone-number" type="text" placeholder="8 (960) 900-60-90" aria-label="поле для ввода номера телефона">
+              <li class="worksheet-list__item  worksheet-list__item--weight">
+                <label class="worksheet-list__label" for="cat-weight">Вес (кг):*</label>
+                <input class="worksheet-list__input  worksheet-list__input--weight" type="text" id="cat-weight" placeholder="7" aria-label="поле для ввода веса">
+              </li>
+              <li class="worksheet-list__item  worksheet-list__item--age">
+                <label class="worksheet-list__label" for="cat-age">Возраст (лет):</label>
+                <input class="worksheet-list__input  worksheet-list__input--age" type="text" id="cat-age" placeholder="7" aria-label="поле для ввода возраста">
+              </li>
+            </ul>
+            <ul class="programm-list">
+              <li class="programm-list__item  programm-list__item--lose">
+                <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-lose" id="programm-lose" aria-label="опция выбора похудение">
+                <label class="programm-list__label" for="programm-lose">Похудение</label>
+              </li>
+              <li class="programm-list__item  programm-list__item--gain">
+                <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-gain" id="programm-gain" aria-label="опция выбора набор массы">
+                <label class="programm-list__label" for="programm-gain">Набор массы</label>
+              </li>
+              <li class="programm-list__item  programm-list__item--advice">
+                <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-advice" id="programm-advice" aria-label="опция выбора нужен совет">
+                <label class="programm-list__label" for="programm-advice">Не знаю (нужен ваш совте)</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__field  comments-field">
-            <legend class="form__legend">Комментарий</legend>
-            <textarea class="form__area  comments-field__area" cols="1" rows="1" placeholder="Расскажите обо всех повадках кота" aria-label="поле для ввода текста обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="form__field  addition-field">
-            <legend class="form__legend">Дополнительно</legend>
-            <ul class="form__list  addition-field__list">
-              <li class="addition-field__item">
-                <input class="addition-field__input  visually-hidden  addition-field__input-checkbox" id="sweetener" type="checkbox" name="sweetener" aria-label="опция выбора сахарозаменитель" checked>
-                <label class="addition-field__label" for="sweetener">Сахарозаменитель</label>
+          <fieldset class="form__field  form__field--owner  owner">
+            <legend class="form__legend  owner__legend">Контактные данные (владельца кота)</legend>
+            <ul class="owner__list">
+              <li class="owner__item">
+                <label class="owner__label" for="email">E-mail:*</label>
+                <input class="owner__input  owner__input--email" id="email" type="text" placeholder="kuklachev@gmail.com" aria-label="поле для ввода эл.почты">
               </li>
-              <li class="addition-field__item">
-                <input class="addition-field__input  visually-hidden  addition-field__input-checkbox" id="water" type="checkbox" name="water" aria-label="опция выбора питьевая вода">
-                <label class="addition-field__label" for="water">Питьевая вода</label>
-              </li>
-              <li class="addition-field__item">
-                <input class="addition-field__input  visually-hidden  addition-field__input-checkbox" id="milk" type="checkbox" name="milk" aria-label="опция выбора молоко">
-                <label class="addition-field__label" for="milk">Молоко</label>
-              </li>
-              <li class="addition-field__item">
-                <input class="addition-field__input  visually-hidden  addition-field__input-checkbox" id="vitamins" type="checkbox" name="vitamins" aria-label="опция выбора витамины">
-                <label class="addition-field__label" for="vitamins">Витамины</label>
+              <li class="owner__item">
+                <label class="owner__label" for="phone-number">Телефон:*</label>
+                <input class="owner__input  owner__input--phone" id="phone-number" type="text" placeholder="8 (960) 900-60-90" aria-label="поле для ввода номера телефона">
               </li>
             </ul>
           </fieldset>
-          <button class="form__btn  link" type="submit" aria-label="кнопка отправить форму">Отправить заявку</button>
-          <small class="form__small-text">* — Обязательные поля</small>
+          <fieldset class="form__field  form__field--comments  comments">
+            <legend class="comments__legend">Комментарий</legend>
+            <textarea class="comments__area" cols="1" rows="1" placeholder="Расскажите обо всех повадках кота" aria-label="поле для ввода текста обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="form__field  form__field--addition  addition">
+            <legend class="addition__legend">Дополнительно</legend>
+            <ul class="addition__list">
+              <li class="addition__item">
+                <input class="addition__input  visually-hidden  addition__input-checkbox" id="sweetener" type="checkbox" name="sweetener" aria-label="опция выбора сахарозаменитель" checked>
+                <label class="addition__label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="addition__item">
+                <input class="addition__input  visually-hidden  addition__input-checkbox" id="water" type="checkbox" name="water" aria-label="опция выбора питьевая вода">
+                <label class="addition__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="addition__item">
+                <input class="addition__input  visually-hidden  addition__input-checkbox" id="milk" type="checkbox" name="milk" aria-label="опция выбора молоко">
+                <label class="addition__label" for="milk">Молоко</label>
+              </li>
+              <li class="addition__item">
+                <input class="addition__input  visually-hidden  addition__input-checkbox" id="vitamins" type="checkbox" name="vitamins" aria-label="опция выбора витамины">
+                <label class="addition__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__inner">
+            <button class="form__btn  link" type="submit" aria-label="кнопка отправить форму">Отправить заявку</button>
+            <small class="form__small-text">* — Обязательные поля</small>
+          </div>
         </div>
       </form>
       <div class="contacts">
-        <div class="contacts__wrapper">
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-      </div>
-      <div class="map">
-        <div class="map__wrapper">
-          <img class="map__img  map__img--mobile" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          <img class="map__img  map__img--tablet" width="767" height="400" src="http://placehold.it/767x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <div class="contacts__wrapper  contacts__wrapper--form">
+          <div class="contact__inner">
+            <p class="contacts__slogan">Приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!</p>
+            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<br>
+            <br>
+            Санкт-Петербург</p>
+          </div>
+          <div class="contacts__map-wrapper">
+            <img class="contacts__map-img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </div>
         </div>
       </div>
     </main>
@@ -127,29 +133,31 @@
           <img class="page-footer__logo-img" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
         </a>
         <div class="page-footer__social  social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
-                <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
-                <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
-                <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
-              </a>
-            </li>
-          </ul>
+          <div class="social__wrapper">
+            <ul class="social__list">
+              <li class="social__item  social__item--vk">
+                <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
+                  <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
+                </a>
+              </li>
+              <li class="social__item  social__item--insta">
+                <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
+                  <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
+                </a>
+              </li>
+              <li class="social__item  social__item--fb">
+                <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
+                  <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-footer__developer  developer">
           <div class="developer__wrapper">
             <span class="developer__text">HTML Academy</span>
-            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-              <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
+            <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+              <img class="developer__img" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
             </a>
           </div>
         </div>

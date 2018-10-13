@@ -1,15 +1,28 @@
 .contacts {
-  background-color: @white;
-  padding-top: 29px;
+  border-bottom: 1px solid transparent;
 }
 
 .contacts__wrapper {
-  display: flex;
   width: @mobile-width;
-  padding: 0 20px;
   box-sizing: border-box;
   margin: 0 auto;
-  margin-bottom: 28px;
+  background-color: @white;
+}
+
+.contacts__wrapper--catalog {
+  background-color: @grey-bgc;
+}
+
+.contacts__wrapper--form {
+  background-color: @grey-bgc;
+}
+
+.contact__inner {
+  padding: 0 20px;
+  padding-top: 29px;
+  padding-bottom: 28px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .contacts__slogan {
@@ -30,16 +43,23 @@
   display: none;
 }
 
+.contacts__map-img {
+  display: block;
+  .img-mw-h();
+  width: 320px;
+  height: 400px;
+}
+
 @media (min-width: @tablet-width) {
-  .contacts {
-    padding-top: 67px;
+  .contacts__wrapper {
+    width: @tablet-width;
   }
 
-  .contacts__wrapper {
-    align-items: flex-start;
-    width: @tablet-width;
+  .contact__inner {
     padding: 0 30px;
-    margin-bottom: 61px;
+    padding-top: 67px;
+    padding-bottom: 61px;
+    justify-content: space-between;
   }
 
   .contacts__slogan {
@@ -55,26 +75,36 @@
     .fontstyle(16px, 20px, 400, @black44);
   }
 
+  .contacts__map-img {
+    width: 767px;
+    height: 400px;
+  }
+
   .contacts__adress br {
     display: inline;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
-    padding-top: 0;
-    position: absolute;
-    left: 40px;
-    top: 2000px;
-    background-color: @white;
+  .contacts__wrapper {
+    position: relative;
+    width: @desktop-width;
+    margin: 0;
   }
 
-  .contacts__wrapper {
+  .contact__inner {
     width: 570px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 95px;
+    left: 40px;
     padding: 0;
     padding-top: 67px;
-    padding-bottom: 61px;
-    margin-bottom: 0;
+    padding-bottom: 52px;
+    padding-left: 77px;
+    padding-right: 77px;
+    justify-content: flex-start;
+    background-color: @white;
   }
 
   .contacts__slogan {
@@ -82,7 +112,6 @@
     box-sizing: border-box;
     margin: 0;
     margin-right: 80px;
-    padding-left: 77px;
     .fontstyle(20px, 25px, 400, @black11);
   }
 
@@ -90,7 +119,11 @@
     width: 245px;
     box-sizing: border-box;
     margin: 0;
-    padding-right: 77px;
     .fontstyle(16px, 20px, 400, @black44);
+  }
+
+  .contacts__map-img {
+    width: 1440px;
+    height: 400px;
   }
 }

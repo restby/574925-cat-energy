@@ -1,16 +1,58 @@
 .programm-list {
   .listreset();
-  padding-top: 28px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  padding-top: 21px;
   border-bottom: 1px solid #ededed;
-  margin-bottom: 31px;
 }
 
 .programm-list__item {
-  margin-bottom: 29px;
+  margin-bottom: 13px;
+  min-height: 30px;
+}
+
+.programm-list__item:last-child {
+  margin-bottom: 22px;
 }
 
 .programm-list__label {
+  display: block;
+  padding-top: 6px;
   .fontstyle(16px, 18px, 400, @black22);
   text-transform: uppercase;
-  padding-left: 47px;
+  padding-left: 46px;
+}
+
+@media (min-width: @tablet-width) {
+  .programm-list {
+    padding: 0;
+    width: 630px;
+    padding-top: 24px;
+    border: 1px solid #ededed;
+  }
+
+  .programm-list__item {
+    min-height: 40px;
+  }
+
+  .programm-list__item:last-child {
+    margin-bottom: 25px;
+  }
+
+  .programm-list__label {
+    .fontstyle(20px, 20px, 400, @black22);
+    padding-left: 88px;
+    padding-top: 11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programm-list {
+    width: 570px;
+    margin: 0;
+  }
+
+  .programm-list__item:last-child {
+    margin-bottom: 25px;
+  }
 }

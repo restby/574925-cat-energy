@@ -20,13 +20,13 @@
           </div>
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--main">
-              <a class="main-nav__link" href="index.html" aria-label="сcылка на главную страницу">Главная</a>
+              <a class="main-nav__link  main-nav__link--catalog" href="index.html" aria-label="сcылка на главную страницу">Главная</a>
             </li>
             <li class="main-nav__item  main-nav__item--catalog">
-              <a class="main-nav__link  main-nav__link--active" aria-label="текущая страница">Каталог продукции</a>
+              <a class="main-nav__link  main-nav__link--catalog  main-nav__link--active" aria-label="текущая страница">Каталог продукции</a>
             </li>
             <li class="main-nav__item  main-nav__item--form">
-              <a class="main-nav__link" href="form.html" aria-label="ссылка на страницу с формой подбора программы">Подбор программы</a>
+              <a class="main-nav__link  main-nav__link--catalog" href="form.html" aria-label="ссылка на страницу с формой подбора программы">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -210,8 +210,8 @@
         </div>
       </section>
       <section class="additional">
+        <h2 class="additional__title">Дополнительные товары</h2>
         <div class="additional__wrapper">
-          <h2 class="additional__title">Дополнительные товары</h2>
           <ul class="additional__list">
             <li class="additional__item">
               <div class="additional__item-wrapper">
@@ -262,23 +262,25 @@
               <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
           </ul>
+          <div class="additional__inner">
+            <p class="additional__text">Закажите все<br>
+            и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
-      <div class="action">
-        <div class="action__wrapper">
-          <p class="action__text">Закажите все и получите чехол для кота в подарок!</p>
-        </div>
-      </div>
       <div class="contacts">
-        <div class="contacts__wrapper">
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-      </div>
-      <div class="map">
-        <div class="map__wrapper">
-          <img class="map__img  map__img--mobile" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          <img class="map__img  map__img--tablet" width="767" height="400" src="http://placehold.it/767x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <div class="contacts__wrapper  contacts__wrapper--catalog">
+          <div class="contact__inner">
+            <p class="contacts__slogan">Приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!</p>
+            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<br>
+            <br>
+            Санкт-Петербург</p>
+          </div>
+          <div class="contacts__map-wrapper">
+            <img class="contacts__map-img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </div>
         </div>
       </div>
     </main>
@@ -288,29 +290,31 @@
           <img class="page-footer__logo-img" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
         </a>
         <div class="page-footer__social  social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
-                <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
-                <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
-                <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
-              </a>
-            </li>
-          </ul>
+          <div class="social__wrapper">
+            <ul class="social__list">
+              <li class="social__item  social__item--vk">
+                <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
+                  <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
+                </a>
+              </li>
+              <li class="social__item  social__item--insta">
+                <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
+                  <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
+                </a>
+              </li>
+              <li class="social__item  social__item--fb">
+                <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
+                  <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-footer__developer  developer">
           <div class="developer__wrapper">
             <span class="developer__text">HTML Academy</span>
-            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-              <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
+            <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+              <img class="developer__img" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
             </a>
           </div>
         </div>
