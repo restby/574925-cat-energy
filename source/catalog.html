@@ -3,32 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Странциа каталога. HTML Academy: Cat Energy</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__bar">
-            <a class="main-nav__logo" aria-label="текущая странциа">
-              <img class="main-nav__logo-pic" width="33" height="38" src="http://placehold.it/33x38" alt="логотип Cat Energy">
-              <img class="main-nav__logo-text" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
+            <a class="main-nav__logo" href="index.html"aria-label="сcылка на главную страницу">
+              <img class="main-nav__logo-img" width="191" height="38" src="http://placehold.it/191x38" alt="логотип Cat Energy">
             </a>
             <button class="main-nav__btn  main-nav__btn--toggle" type="button" aria-label="кнопка переключатель меню">
               <span class="visually-hidden">открыть</span>
             </button>
           </div>
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html" aria-label="ссылка на главную страницу">Главная</a>
+            <li class="main-nav__item  main-nav__item--main">
+              <a class="main-nav__link  main-nav__link--catalog" href="index.html" aria-label="сcылка на главную страницу">Главная</a>
             </li>
-            <li class="main-nav__item  main-nav__item--active">
-              <a class="main-nav__link" aria-label="текущая странциа">Каталог продукции</a>
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a class="main-nav__link  main-nav__link--catalog  main-nav__link--active" aria-label="текущая страница">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html" aria-label="ссылка на страницу с формой подбора программы">Подбор программы</a>
+            <li class="main-nav__item  main-nav__item--form">
+              <a class="main-nav__link  main-nav__link--catalog" href="form.html" aria-label="ссылка на страницу с формой подбора программы">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -60,7 +58,7 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              <a class="catalog__item-link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
@@ -83,7 +81,7 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              <a class="catalog__item-link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
@@ -106,7 +104,7 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              <a class="catalog__item-link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
@@ -129,7 +127,7 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              <a class="catalog__item-link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
@@ -152,7 +150,7 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              <a class="catalog__item-link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
@@ -175,7 +173,7 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              <a class="catalog__item-link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
@@ -198,104 +196,125 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              <a class="catalog__item-link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__item-wrapper">
+                <button class="catalog__btn" aria-label="кнопка показать еще товары"></button>
+                <b class="catalog__text">Показать еще 100500 товаров</b>
+                <small class="catalog__slogan">На самом деле вкусов гораздо больше!</small>
+              </div>
+              <a class="catalog__item-link  link  link--catalog" href="#" aria-label="ссылка показать все товары">Показать все</a>
             </li>
           </ul>
-          <button class="catalog__btn" aria-label="кнопка показать еще товары"></button>
-          <b class="catalog__text">Показать еще 100500 товаров</b>
-          <small class="catalog__slogan">На самом деле вкусов гораздо больше</small>
-          <a class="catalog__link  link  link--catalog" href="#" aria-label="ссылка показать все товары">Показать все</a>
         </div>
       </section>
       <section class="additional">
+        <h2 class="additional__title">Дополнительные товары</h2>
         <div class="additional__wrapper">
-          <h2 class="additional__title">Дополнительные товары</h2>
           <ul class="additional__list">
             <li class="additional__item">
-              <h3 class="additional__item-title">Сахарозаменитель</h3>
-              <table class="additional__table">
-                <tr>
-                  <td class="additional__field">1 упаковка (100 г)</td>
-                  <td class="additional__value">100 Р.</td>
-                </tr>
-              </table>
+              <div class="additional__item-wrapper">
+                <h3 class="additional__item-title">Сахарозаменитель</h3>
+                <table class="additional__table">
+                  <tr>
+                    <td class="additional__field">1 упаковка (100 г)</td>
+                    <td class="additional__value">100 Р.</td>
+                  </tr>
+                </table>
+              </div>
               <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="additional__item">
-              <h3 class="additional__item-title">Питьевая вода</h3>
-              <table class="additional__table">
-                <tr>
-                  <td class="additional__field">5 литров</td>
-                  <td class="additional__value">50 Р.</td>
-                </tr>
-              </table>
+              <div class="additional__item-wrapper">
+                <h3 class="additional__item-title">Питьевая вода</h3>
+                <table class="additional__table">
+                  <tr>
+                    <td class="additional__field">5 литров</td>
+                    <td class="additional__value">50 Р.</td>
+                  </tr>
+                </table>
+              </div>
               <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="additional__item">
-              <h3 class="additional__item-title">Молоко</h3>
-              <table class="additional__table">
-                <tr>
-                  <td class="additional__field">1 литр</td>
-                  <td class="additional__value">100 Р.</td>
-                </tr>
-              </table>
+              <div class="additional__item-wrapper">
+                <h3 class="additional__item-title">Молоко</h3>
+                <table class="additional__table">
+                  <tr>
+                    <td class="additional__field">1 литр</td>
+                    <td class="additional__value">100 Р.</td>
+                  </tr>
+                </table>
+              </div>
               <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
             <li class="additional__item">
-              <h3 class="additional__item-title">Витамины</h3>
-              <table class="additional__table">
-                <tr>
-                  <td class="additional__field">1 упаковка (30 г)</td>
-                  <td class="additional__value">300 Р.</td>
-                </tr>
-              </table>
+              <div class="additional__item-wrapper">
+                <h3 class="additional__item-title">Витамины</h3>
+                <table class="additional__table">
+                  <tr>
+                    <td class="additional__field">1 упаковка (30 г)</td>
+                    <td class="additional__value">300 Р.</td>
+                  </tr>
+                </table>
+              </div>
               <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
             </li>
           </ul>
+          <div class="additional__inner">
+            <p class="additional__text">Закажите все<br>
+            и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
-      <div class="action">
-        <div class="action__wrapper">
-          <p class="action__text">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="contacts">
+        <div class="contacts__wrapper  contacts__wrapper--catalog">
+          <div class="contact__inner">
+            <p class="contacts__slogan">Приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!</p>
+            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<br>
+            <br>
+            Санкт-Петербург</p>
+          </div>
+          <div class="contacts__map-wrapper">
+            <img class="contacts__map-img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </div>
         </div>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts  contacts">
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div class="page-footer__map  map">
-          <img class="map__img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </div>
         <a class="page-footer__logo" href="index.html" aria-label="ссылка на главную страницу">
           <img class="page-footer__logo-img" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
         </a>
         <div class="page-footer__social  social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
-                <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
-                <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
-                <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
-              </a>
-            </li>
-          </ul>
+          <div class="social__wrapper">
+            <ul class="social__list">
+              <li class="social__item  social__item--vk">
+                <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
+                  <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
+                </a>
+              </li>
+              <li class="social__item  social__item--insta">
+                <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
+                  <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
+                </a>
+              </li>
+              <li class="social__item  social__item--fb">
+                <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
+                  <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-footer__developer  developer">
           <div class="developer__wrapper">
             <span class="developer__text">HTML Academy</span>
-            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-              <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
+            <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+              <img class="developer__img" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
             </a>
           </div>
         </div>

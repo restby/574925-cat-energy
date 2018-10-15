@@ -1,0 +1,51 @@
+.comments__legend {
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+
+.comments__area {
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+  border: 1px solid @border-color-darker;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  color: @desc-color-alternative;
+  text-transform: uppercase;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: @desc-color-alternative;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .comments__legend {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 71px;
+  }
+
+  .comments__area {
+    min-height: 174px;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,21 +1,127 @@
 .contacts {
-  padding-left: 20px;
-  padding-right: 20px;
+  border-bottom: 1px solid transparent;
+}
+
+.contacts__wrapper {
+  width: @mobile-width;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: @white-color;
+}
+
+.contacts__wrapper--catalog {
+  background-color: @background-grey-color;
+}
+
+.contacts__wrapper--form {
+  background-color: @background-grey-color;
+}
+
+.contact__inner {
+  padding: 0 20px;
+  padding-top: 29px;
+  padding-bottom: 28px;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  padding-bottom: 31px;
-  background-color: @greybgc;
 }
 
 .contacts__slogan {
-  .fontstyle(16px, 20px, 400, @black11);
-  .textreset();
+  width: 140px;
+  .reset-ma-pa();
   text-transform: uppercase;
 }
 
 .contacts__adress {
-  .fontstyle(14px, 20px, 400, @black44);
-  .textreset();
-  .font-fam-ar();
+  width: 140px;
+  font-size: 14px;
+  color: @desc-color-alternative;
+  .reset-ma-pa();
+  font-family: "Arial", sans-serif;
+}
+
+.contacts__adress br {
+  display: none;
+}
+
+.contacts__map-img {
+  display: block;
+  width: 320px;
+  height: 400px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    width: @tablet-width;
+  }
+
+  .contact__inner {
+    padding: 0 30px;
+    padding-top: 67px;
+    padding-bottom: 61px;
+    justify-content: space-between;
+  }
+
+  .contacts__slogan {
+    width: 192px;
+    margin-left: 42px;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__adress {
+    width: 192px;
+    margin-right: 42px;
+    font-size: 16px;
+  }
+
+  .contacts__map-img {
+    width: 767px;
+    height: 400px;
+  }
+
+  .contacts__adress br {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    position: relative;
+    width: @desktop-width;
+    margin: 0;
+  }
+
+  .contact__inner {
+    width: 570px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    padding: 0;
+    padding-top: 67px;
+    padding-bottom: 52px;
+    padding-left: 77px;
+    padding-right: 77px;
+    justify-content: flex-start;
+    background-color: @white-color;
+  }
+
+  .contacts__slogan {
+    width: 245px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: 80px;
+  }
+
+  .contacts__adress {
+    width: 245px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .contacts__map-img {
+    width: 1440px;
+    height: 400px;
+  }
 }

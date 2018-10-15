@@ -3,31 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Главная странциа. HTML Academy: Cat Energy</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__bar">
-            <a class="main-nav__logo" aria-label="текущая странциа">
-              <img class="main-nav__logo-pic" width="33" height="38" src="http://placehold.it/33x38" alt="логотип Cat Energy">
-              <img class="main-nav__logo-text" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
+            <a class="main-nav__logo" aria-label="текущая страница">
+              <img class="main-nav__logo-img" width="191" height="38" src="http://placehold.it/191x38" alt="логотип Cat Energy">
             </a>
             <button class="main-nav__btn  main-nav__btn--toggle" type="button" aria-label="кнопка переключатель меню">
               <span class="visually-hidden">открыть</span>
             </button>
           </div>
           <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active">
-              <a class="main-nav__link" aria-label="текущая странциа">Главная</a>
+            <li class="main-nav__item  main-nav__item--main">
+              <a class="main-nav__link  main-nav__link--active" aria-label="текущая страница">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--catalog">
               <a class="main-nav__link" href="catalog.html" aria-label="ссылка на страницу с каталогом продукции">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--form">
               <a class="main-nav__link" href="form.html" aria-label="ссылка на страницу с формой подбора программы">Подбор программы</a>
             </li>
           </ul>
@@ -38,25 +36,24 @@
       <h1 class="visually-hidden">Магазин Cat Energy</h1>
       <section class="promo">
         <div class="promo__wrapper">
-          <div class="promo__text-wrapper">
-            <h2 class="pormo__title">Функциональное питание для котов</h2>
-            <b class="promo__slogan">Занялся собой? Займись котом!</b>
-          </div>
-          <img class="promo__img" width="280" height="271" src="http://placehold.it/280x270" alt="промо-изображение">
+          <h2 class="pormo__title">Функциональное<br>
+            питание для котов</h2>
+          <b class="promo__slogan">Занялся собой? Займись котом!</b>
+          <img class="promo__img" width="280" height="270" src="http://placehold.it/280x270" alt="промо-изображение">
           <a class="promo__link  link  link--promo" href="form.html" aria-label="ссылка на странциа с формой">Подобрать программу</a>
         </div>
       </section>
       <div class="features">
         <div class="features__wrapper">
           <ul class="features__list">
-            <li class="features__item  features__item--1">
+            <li class="features__item  features__item--slim">
               <h2 class="features__title">Похудение</h2>
-              <p class="features__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <p class="features__desc  features__desc--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="features__link" href="catalog.html" aria-label="ссылка на страницу каталога">Каталог SLIM</a>
             </li>
-            <li class="features__item  features__item--2">
+            <li class="features__item  features__item--pro">
               <h2 class="features__title">Набор массы</h2>
-              <p class="features__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <p class="features__desc  features__desc--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="features__link" href="catalog.html" aria-label="ссылка на страницу каталога">Каталог PRO</a>
             </li>
           </ul>
@@ -67,15 +64,19 @@
           <h2 class="info__title">Как это работает</h2>
           <ul class="info__list">
             <li class="info__item  info__item--1">
+              <div class="info__pic-wrapper  info__pic-wrapper--1"></div>
               <p class="info__desc">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="info__item  info__item--2">
+              <div class="info__pic-wrapper  info__pic-wrapper--2"></div>
               <p class="info__desc">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="info__item  info__item--3">
+              <div class="info__pic-wrapper  info__pic-wrapper--3"></div>
               <p class="info__desc">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="info__item  info__item--4">
+              <div class="info__pic-wrapper  info__pic-wrapper--4"></div>
               <p class="info__desc">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ul>
@@ -85,64 +86,80 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <ul class="example__list">
-            <li class="example__item">
-              <span class="example__value">5кг</span>
-              <span class="example__field">снижение веса</span>
-            </li>
-            <li class="example__item">
-              <span class="example__value">60дней</span>
-              <span class="example__field">затрачено времени</span>
-            </li>
-          </ul>
-          <b class="example__text">Затраты на питание: 15 000 руб.</b>
-          <img class="example__img" width="311" height="232" src="http://placehold.it/311x232" alt="изображение для сравнения">
+          <div class="example__inner">
+            <ul class="example__list">
+              <li class="example__item  example__item--1">
+                <span class="example__value">5кг</span>
+                <span class="example__field  example__field--1">снижение веса</span>
+              </li>
+              <li class="example__item  example__item--2">
+                <span class="example__value">60дней</span>
+                <span class="example__field  example__field--2">затрачено времени</span>
+              </li>
+            </ul>
+            <b class="example__text">
+              <span>Затраты на питание: </span>
+              <span>15 000 руб.</span>
+            </b>
+          </div>
+          <img class="example__img  example__img--before" width="311" height="232" src="http://placehold.it/311x232" alt="изображение для сравнения">
+          <img class="example__img  example__img--after" width="251" height="240" src="http://placehold.it/251x240" alt="изображение для сравнения">
           <div class="example__slider">
-            <span class="example__toggle-text  example__toggle-text--prev">Было</span>
+            <button class="example__toggle-btn  example__toggle-btn--prev" type="button">Было</button>
             <div class="example__bar">
               <div class="example__toggle"></div>
             </div>
-            <span class="example__toggle-text  example__toggle-text--next">Стало</span>
+            <button class="example__toggle-btn  example__toggle-btn--next" type="button">Стало</button>
           </div>
         </div>
       </section>
+      <div class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contact__inner">
+            <p class="contacts__slogan">Приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!</p>
+            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<br>
+            <br>
+            Санкт-Петербург</p>
+          </div>
+          <div class="contacts__map-wrapper">
+            <img class="contacts__map-img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts  contacts">
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div class="page-footer__map  map">
-          <img class="map__img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </div>
         <a class="page-footer__logo" href="index.html" aria-label="ссылка на главную страницу">
           <img class="page-footer__logo-img" width="128" height="24" src="http://placehold.it/128x24" alt="логотип Cat Energy">
         </a>
         <div class="page-footer__social  social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
-                <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
-                <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
-                <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
-              </a>
-            </li>
-          </ul>
+          <div class="social__wrapper">
+            <ul class="social__list">
+              <li class="social__item  social__item--vk">
+                <a class="social__link" href="#" aria-label="ссылка на нас в vkontakte">
+                  <img class="social__logo  social__logo--vkontakte" width="22" height="12" src="http://placehold.it/22x12" alt="логотип vkontakte">
+                </a>
+              </li>
+              <li class="social__item  social__item--insta">
+                <a class="social__link" href="#" aria-label="ссылка на нас в instagramm">
+                  <img class="social__logo  social__logo--instagramm" width="16" height="16" src="http://placehold.it/16x16" alt="логотип instagramm">
+                </a>
+              </li>
+              <li class="social__item  social__item--fb">
+                <a class="social__link" href="#" aria-label="ссылка на нас в facebook">
+                  <img class="social__logo  social__logo--facebook" width="10" height="19" src="http://placehold.it/10x19" alt="логотип facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-footer__developer  developer">
           <div class="developer__wrapper">
             <span class="developer__text">HTML Academy</span>
-            <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-              <img class="developer__logo" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
+            <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+              <img class="developer__img" width="27" height="34" src="http://placehold.it/27x34" alt="логотип HTML Academy">
             </a>
           </div>
         </div>

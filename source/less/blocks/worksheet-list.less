@@ -1,0 +1,125 @@
+.worksheet-list {
+  .listreset();
+  box-sizing: border-box;
+  padding: 0 20px;
+  border-bottom: 1px solid @border-color-alternative;
+}
+
+.worksheet-list__item {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.worksheet-list__item:last-child {
+  margin-bottom: 23px;
+}
+
+.worksheet-list__label {
+  line-height: 18px;
+  font-weight: 400;
+  color: @desc-color;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+.worksheet-list__input {
+  line-height: 18px;
+  color: @desc-color;
+  border: 1px solid @border-color;
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  &::placeholder {
+    line-height: 18px;
+    color: @desc-color-alternative;
+    text-transform: uppercase;
+  }
+}
+
+.worksheet-list__input--name {
+  width: 229px;
+}
+
+.worksheet-list__input--weight {
+  width: 204px;
+}
+
+.worksheet-list__input--age {
+  width: 172px;
+}
+
+@media (min-width: @tablet-width) {
+  .worksheet-list {
+    padding: 0;
+    border-bottom: 0;
+    margin-bottom: 72px;
+  }
+
+  .worksheet-list__item {
+    margin-bottom: 20px;
+  }
+
+  .worksheet-list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .worksheet-list__label {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 17px;
+  }
+
+  .worksheet-list__input {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .worksheet-list__input--name {
+    width: 567px;
+  }
+
+  .worksheet-list__input--weight {
+    width: 536px;
+    padding-left: 19px;
+  }
+
+  .worksheet-list__input--age {
+    width: 497px;
+    padding-left: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .worksheet-list {
+    width: 570px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .worksheet-list__input--name {
+    width: 506px;
+  }
+
+  .worksheet-list__input--weight {
+    width: 475px;
+  }
+
+  .worksheet-list__input--age {
+    width: 436px;
+  }
+}

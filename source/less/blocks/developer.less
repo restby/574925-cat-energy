@@ -1,12 +1,42 @@
+.developer {
+  border-bottom: 1px solid transparent;
+}
+
 .developer__wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 22px;
+  margin-bottom: 22px;
 }
 
 .developer__text {
-  .font-fam-ar();
-  .fontstyle(16px, 16px, 400, @black44);
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  color: @desc-color-alternative;
+  padding-top: 9px;
+}
+
+.developer__img {
+  width: 27px;
+  height: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .developer__wrapper {
+    width: 162px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .developer__wrapper {
+    width: 245px;
+    justify-content: flex-end;
+  }
+
+  .developer__logo {
+    margin-left: 23px;
+  }
 }
