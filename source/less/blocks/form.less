@@ -6,12 +6,13 @@
   width: @mobile-width;
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: @white;
+  background-color: @white-color;
 }
 
 .form__title {
   .reset-ma-pa();
-  .fontstyle(36px, 60px, 400, @black11);
+  font-size: 36px;
+  line-height: 60px;
   padding: 0 20px;
   padding-top: 19px;
   margin-bottom: 28px;
@@ -21,7 +22,8 @@
   .reset-ma-pa();
   padding: 0 20px;
   padding-right: 50px;
-  .fontstyle(14px, 18px, 400, @black11);
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 29px;
 }
@@ -63,8 +65,10 @@
 }
 
 .form__small-text {
-  font-family: @font-arial;
-  .fontstyle(14px, 16px, 400, @black44);
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: @desc-color-alternative;
 }
 
 @media (min-width: @tablet-width) {
@@ -74,7 +78,8 @@
   }
 
   .form__title {
-    .fontstyle(60px, 60px, 400, @black11);
+    font-size: 60px;
+    line-height: 60px;
     padding: 0;
     padding-top: 70px;
     margin-bottom: 60px;
@@ -84,7 +89,8 @@
     padding: 0;
     margin-left: 42px;
     padding-right: 325px;
-    .fontstyle(20px, 30px, 400, @black11);
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 64px;
   }
 
@@ -130,7 +136,7 @@
     display: block;
     width: 287px;
     padding-top: 17px;
-    .fontstyle(16px, 16px, 400, @black44);
+    font-size: 16px;
   }
 }
 
@@ -152,7 +158,6 @@
   .form__text {
     padding: 0;
     padding-right: 895px;
-    .fontstyle(20px, 30px, 400, @black11);
     margin-bottom: 68px;
   }
 

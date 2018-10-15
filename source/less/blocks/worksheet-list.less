@@ -2,7 +2,7 @@
   .listreset();
   box-sizing: border-box;
   padding: 0 20px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid @border-color-alternative;
 }
 
 .worksheet-list__item {
@@ -17,14 +17,17 @@
 }
 
 .worksheet-list__label {
-  .fontstyle(16px, 18px, 400, @black22);
+  line-height: 18px;
+  font-weight: 400;
+  color: @desc-color;
   text-transform: uppercase;
   padding-top: 15px;
 }
 
 .worksheet-list__input {
-  .fontstyle(16px, 18px, 400, @black22);
-  border: 1px solid @dark-grey;
+  line-height: 18px;
+  color: @desc-color;
+  border: 1px solid @border-color;
   box-sizing: border-box;
   padding-top: 12px;
   padding-bottom: 13px;
@@ -32,7 +35,8 @@
   padding-right: 16px;
 
   &::placeholder {
-    .fontstyle(16px, 18px, 400, @black44);
+    line-height: 18px;
+    color: @desc-color-alternative;
     text-transform: uppercase;
   }
 }
@@ -65,19 +69,22 @@
   }
 
   .worksheet-list__label {
-    .fontstyle(20px, 20px, 400, @black22);
+    font-size: 20px;
+    line-height: 20px;
     padding-top: 17px;
   }
 
   .worksheet-list__input {
-    .fontstyle(20px, 20px, 400, @black22);
+    font-size: 20px;
+    line-height: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
 
     &::placeholder {
-      .fontstyle(20px, 20px, 400, @black44);
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 

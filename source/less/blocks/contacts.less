@@ -6,15 +6,15 @@
   width: @mobile-width;
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: @white;
+  background-color: @white-color;
 }
 
 .contacts__wrapper--catalog {
-  background-color: @grey-bgc;
+  background-color: @background-grey-color;
 }
 
 .contacts__wrapper--form {
-  background-color: @grey-bgc;
+  background-color: @background-grey-color;
 }
 
 .contact__inner {
@@ -27,16 +27,16 @@
 
 .contacts__slogan {
   width: 140px;
-  .fontstyle(16px, 20px, 400, @black11);
   .reset-ma-pa();
   text-transform: uppercase;
 }
 
 .contacts__adress {
   width: 140px;
-  .fontstyle(14px, 20px, 400, @black44);
+  font-size: 14px;
+  color: @desc-color-alternative;
   .reset-ma-pa();
-  font-family: @font-arial;
+  font-family: "Arial", sans-serif;
 }
 
 .contacts__adress br {
@@ -45,7 +45,6 @@
 
 .contacts__map-img {
   display: block;
-  .img-mw-h();
   width: 320px;
   height: 400px;
 }
@@ -66,13 +65,14 @@
     width: 192px;
     margin-left: 42px;
     margin-right: auto;
-    .fontstyle(20px, 25px, 400, @black11);
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .contacts__adress {
     width: 192px;
     margin-right: 42px;
-    .fontstyle(16px, 20px, 400, @black44);
+    font-size: 16px;
   }
 
   .contacts__map-img {
@@ -104,7 +104,7 @@
     padding-left: 77px;
     padding-right: 77px;
     justify-content: flex-start;
-    background-color: @white;
+    background-color: @white-color;
   }
 
   .contacts__slogan {
@@ -112,14 +112,12 @@
     box-sizing: border-box;
     margin: 0;
     margin-right: 80px;
-    .fontstyle(20px, 25px, 400, @black11);
   }
 
   .contacts__adress {
     width: 245px;
     box-sizing: border-box;
     margin: 0;
-    .fontstyle(16px, 20px, 400, @black44);
   }
 
   .contacts__map-img {

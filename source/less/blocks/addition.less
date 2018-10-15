@@ -1,6 +1,7 @@
 .addition__legend {
   padding: 0;
-  .fontstyle(24px, 24px, 400, @black11);
+  font-size: 24px;
+  line-height: 24px;
   margin-bottom: 32px;
 }
 
@@ -19,7 +20,9 @@
 
 .addition__label {
   display: block;
-  .fontstyle(16px, 18px, 400, @black22);
+  font-size: 16px;
+  line-height: 18px;
+  color: @desc-color;
   text-transform: uppercase;
   padding-top: 7px;
   padding-left: 46px;
@@ -27,7 +30,8 @@
 
 @media (min-width: @tablet-width) {
   .addition__legend {
-    .fontstyle(36px, 36px, 400, @black11);
+    font-size: 36px;
+    line-height: 36px;
     margin-bottom: 53px;
   }
 
@@ -56,7 +60,6 @@
 
   .addition__label {
     display: block;
-    .fontstyle(16px, 18px, 400, @black22);
     text-transform: uppercase;
     padding-top: 7px;
     padding-left: 46px;

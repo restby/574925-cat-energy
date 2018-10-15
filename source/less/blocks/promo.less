@@ -1,6 +1,6 @@
 .promo {
   margin-bottom: 22px;
-  background-color: @white;
+  background-color: @white-color;
 }
 
 .promo__wrapper {
@@ -10,13 +10,15 @@
   padding: 0 20px;
   padding-top: 26px;
   border-bottom: 1px solid transparent;
-  background-color: #63a73a;
+  background-color: @link-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 .pormo__title {
-  .fontstyle(36px, 36px, 400, @white);
+  font-size: 36px;
+  line-height: 36px;
+  color: @white-color;
   .reset-ma-pa();
   text-align: center;
   margin-bottom: 23px;
@@ -24,7 +26,9 @@
 
 .promo__slogan {
   .reset-ma-pa();
-  .fontstyle(14px, 14px, 400, @white);
+  font-size: 14px;
+  line-height: 14px;
+  color: @white-color;
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -48,7 +52,9 @@
 }
 
 .link--promo {
-  .fontstyle(14px, 18px, 400, @white);
+  font-size: 14px;
+  line-height: 18px;
+  color: @white-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -71,14 +77,17 @@
   }
 
   .pormo__title {
-    .fontstyle(60px, 60px, 400, @black11);
+    font-size: 60px;
+    line-height: 60px;
     text-align: left;
     margin-bottom: 35px;
     margin-left: 90px;
   }
 
   .promo__slogan {
-    .fontstyle(20px, 20px, 400, @black11);
+    font-size: 20px;
+    line-height: 20px;
+    color: @title-black-color;
     text-align: left;
     margin-bottom: 20px;
     margin-left: 90px;
@@ -99,7 +108,8 @@
   }
 
   .link--promo {
-    .fontstyle(20px, 20px, 400, @white);
+    font-size: 20px;
+    line-height: 20px;
     padding-top: 17px;
     padding-bottom: 15px;
     padding-left: 26px;
@@ -118,7 +128,6 @@
   }
 
   .pormo__title {
-    .fontstyle(60px, 60px, 400, @black11);
     text-align: left;
     margin-bottom: 45px;
     margin-left: 80px;
@@ -127,7 +136,6 @@
   }
 
   .promo__slogan {
-    .fontstyle(20px, 20px, 400, @black11);
     text-align: left;
     margin-bottom: 53px;
     margin-left: 80px;

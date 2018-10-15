@@ -7,8 +7,9 @@
 
 .catalog__title {
   .reset-ma-pa();
-  .fontstyle(36px, 60px, 400, @black11);
-  border-bottom: 1px solid @light-grey;
+  font-size: 36px;
+  line-height: 60px;
+  border-bottom: 1px solid @border-color-alternative;
   padding: 0 20px;
   padding-bottom: 23px;
 }
@@ -18,7 +19,7 @@
 }
 
 .catalog__item {
-  border-bottom: 1px solid @light-grey;
+  border-bottom: 1px solid @border-color-alternative;
 }
 
 .catalog__item-wrapper {
@@ -49,7 +50,6 @@
 
 .catalog__item-title {
   .reset-ma-pa();
-  .fontstyle(16px, 20px, 400, @black11);
   padding-right: 65px;
   margin-bottom: 14px;
 }
@@ -63,16 +63,20 @@
   width: 50%;
   text-align: left;
   vertical-align: top;
-  font-family: @font-arial;
-  .fontstyle(12px, 16px, 400, @black44);
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: @desc-color-alternative;
 }
 
 .catalog__value {
   width: 50%;
   text-align: right;
   vertical-align: top;
-  font-family: @font-arial;
-  .fontstyle(12px, 16px, 400, @black44);
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: @desc-color-alternative;
 }
 
 .catalog__item-link {
@@ -85,7 +89,7 @@
 .catalog__btn {
   display: block;
   border: 0;
-  background-color: @white;
+  background-color: @white-color;
   width: 30px;
   height: 30px;
   margin: 0 auto;
@@ -93,20 +97,22 @@
   margin-bottom: 24px;
 
   &::before {
-    .before-after();
+    position: absolute;
+    content: "";
     width: 30px;
     height: 2px;
-    background-color: #d3d3d3;
+    background-color: @background-alternative;
     top: 50%;
     margin-top: -1px;
     left: 0;
   }
 
   &::after {
-    .before-after();
+    position: absolute;
+    content: "";
     width: 2px;
     height: 30px;
-    background-color: #d3d3d3;
+    background-color: @background-alternative;
     top: 0;
     left: 50%;
     margin-left: -1px;
@@ -115,7 +121,6 @@
 
 .catalog__text {
   display: block;
-  .fontstyle(16px, 20px, 400, @black11);
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 12px;
@@ -123,17 +128,19 @@
 
 .catalog__slogan {
   display: block;
-  font-family: @font-arial;
-  .fontstyle(12px, 16px, 400, @black44);
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: @desc-color-alternative;
   text-align: center;
   margin-bottom: 23px;
 }
 
 .link--catalog {
   margin-bottom: 25px;
-  background-color: @grey-bgc;
+  background-color: @background-grey-color;
   text-align: center;
-  .fontstyle(16px, 20px, 400, @black44);
+  color: @desc-color-alternative;
 }
 
 @media (min-width: @tablet-width) {
@@ -145,7 +152,7 @@
   }
 
   .catalog__title {
-    .fontstyle(60px, 60px, 400, @black11);
+    font-size: 60px;
     border-bottom: 0;
     padding: 0;
     padding-bottom: 156px;
@@ -163,7 +170,7 @@
     padding: 0;
     padding-left: 38px;
     padding-right: 37px;
-    background-color: @grey-bgc;
+    background-color: @background-grey-color;
     margin-bottom: 140px;
 
     &:nth-child(2n+1) {
@@ -202,7 +209,7 @@
   }
 
   .catalog__item-title {
-    .fontstyle(20px, 20px, 400, @black11);
+    font-size: 20px;
     padding-left: 63px;
     padding-right: 60px;
     margin-bottom: 28px;
@@ -210,17 +217,17 @@
   }
 
   .catalog__item-table tr {
-    border-bottom: 1px solid @dark-grey;
+    border-bottom: 1px solid @border-color;
   }
 
   .catalog__field {
-    .fontstyle(16px, 16px, 400, @black44);
+    font-size: 16px;
     padding-top: 8px;
     padding-bottom: 7px;
   }
 
   .catalog__value {
-    .fontstyle(16px, 16px, 400, @black44);
+    font-size: 16px;
     padding-top: 8px;
     padding-bottom: 7px;
   }
@@ -232,8 +239,8 @@
   }
 
   .catalog__item:last-child {
-    background-color: @white;
-    border: 1px solid #e6e6e6;
+    background-color: @white-color;
+    border: 1px solid @border-color-darker;
   }
 
   .catalog__item:last-child .catalog__item-wrapper {
@@ -249,28 +256,31 @@
     margin-bottom: 51px;
 
     &::before {
-      .before-after();
+      position: absolute;
+      content: "";
       width: 60px;
-      background-color: #e6e6e6;
+      background-color: @border-color-darker;
     }
 
     &::after {
-      .before-after();
+      position: absolute;
+      content: "";
       height: 60px;
-      background-color: #e6e6e6;
+      background-color: @border-color-darker;
     }
   }
 
   .catalog__text {
     display: block;
-    .fontstyle(20px, 20px, 400, @black11);
+    font-size: 20px;
     padding-left: 57px;
     padding-right: 55px;
     margin-bottom: 26px;
   }
 
   .catalog__slogan {
-    .fontstyle(16px, 20px, 400, @black44);
+    font-size: 16px;
+    line-height: 20px;
     padding-left: 41px;
     padding-right: 35px;
     margin-bottom: 86px;

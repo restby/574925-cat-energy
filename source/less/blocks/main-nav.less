@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: @white;
+  background-color: @white-color;
 }
 
 .main-nav__wrapper {
@@ -9,7 +9,7 @@
 }
 
 .main-nav__bar {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid @border-color-darker;
   display: flex;
   align-items: flex-start;
   padding: 0 20px;
@@ -31,12 +31,12 @@
 }
 
 .main-nav__item {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid @border-color-darker;
 }
 
 .main-nav__link {
   display: block;
-  .fontstyle(20px, 20px, 500, @black11);
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 22px;
@@ -98,13 +98,15 @@
   }
 
   .main-nav__link {
-    .fontstyle(18px, 24px, 400, @black22);
+    font-size: 18px;
+    line-height: 24px;
+    color: @desc-color;
     padding: 0;
   }
 
   .main-nav__link--active {
     padding-bottom: 9px;
-    border-bottom: 2px solid @link-bgc;
+    border-bottom: 2px solid @link-color;
   }
 }
 
@@ -134,20 +136,22 @@
   }
 
   .main-nav__link {
-    .fontstyle(20px, 24px, 400, @white);
+    font-size: 20px;
+    color: @white-color;
     padding: 0;
   }
 
   .main-nav__link--catalog {
-    .fontstyle(20px, 24px, 400, @black11);
+    font-size: 20px;
+    color: @title-black-color;
   }
 
   .main-nav__link--active {
     padding-bottom: 10px;
-    border-bottom: 2px solid @white;
+    border-bottom: 2px solid @white-color;
   }
 
   .main-nav__link--catalog.main-nav__link--active {
-    border-bottom: 2px solid @link-bgc;
+    border-bottom: 2px solid @link-color;
   }
 }
