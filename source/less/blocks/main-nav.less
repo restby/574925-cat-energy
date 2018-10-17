@@ -37,6 +37,7 @@
 .main-nav__link {
   display: block;
   font-size: 20px;
+  color: @title-black-color;
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 22px;
@@ -111,6 +112,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
   .main-nav__wrapper {
     width: @desktop-width;
     padding: 0 40px;

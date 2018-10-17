@@ -10,14 +10,21 @@
   padding: 0 20px;
   padding-top: 26px;
   border-bottom: 1px solid transparent;
-  background-color: @link-color;
+  background-color: @white-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .pormo__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: @white-color;
   .reset-ma-pa();
   text-align: center;
@@ -28,6 +35,7 @@
   .reset-ma-pa();
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   color: @white-color;
   display: block;
   text-align: center;
@@ -37,9 +45,6 @@
 
 .promo__img {
   display: block;
-  margin-bottom: 3px;
-  width: 280px;
-  height: 270px;
 }
 
 .promo__link {
@@ -74,6 +79,11 @@
     align-items: flex-start;
     flex-wrap: wrap;
     position: relative;
+    background-image: none;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: none;
+    }
   }
 
   .pormo__title {
@@ -91,12 +101,6 @@
     text-align: left;
     margin-bottom: 20px;
     margin-left: 90px;
-  }
-
-  .promo__img {
-    margin-bottom: 0;
-    width: 709px;
-    height: 609px;
   }
 
   .promo__link {
@@ -119,16 +123,29 @@
 @media (min-width: @desktop-width) {
   .promo {
     margin-bottom: 80px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
   }
 
   .promo__wrapper {
     width: @desktop-width;
     padding: 0 40px;
     flex-direction: column;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left 659px top 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 
   .pormo__title {
+    color: @title-black-color;
     text-align: left;
+    margin-top: 226px;
     margin-bottom: 45px;
     margin-left: 80px;
     order: 1;
@@ -143,12 +160,10 @@
   }
 
   .promo__img {
-    width: 552px;
-    height: 499px;
     order: 4;
     position: absolute;
-    left: 450px;
-    top: 0;
+    left: 500px;
+    top: 142px;
   }
 
   .promo__link {

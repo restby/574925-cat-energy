@@ -6,6 +6,7 @@
   .reset-ma-pa();
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   margin: 0 auto;
   width: 280px;
   padding-top: 31px;
@@ -39,6 +40,7 @@
 .additional__item-title {
   .reset-ma-pa();
   line-height: 16px;
+  font-weight: 400;
   color: @desc-color;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -80,6 +82,9 @@
 .additional__inner {
   padding-top: 190px;
   background-color: @link-color;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   border-bottom: 1px solid transparent;
   position: relative;
 
@@ -92,6 +97,11 @@
     left: 113px;
     background-color: @white-color;
   }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/gift-photo-mobile@2x.jpg");
+      background-size: 280px auto;
+    }
 }
 
 .additional__text {
@@ -100,7 +110,7 @@
   text-align: center;
   font-family: "Arial", sans-serif;
   color: @white-color;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
 }
 
 @media (min-width: @tablet-width) {
@@ -176,9 +186,15 @@
 
   .additional__inner {
     padding-top: 75px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
 
     &::before {
       left: 91px;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
     }
   }
 
@@ -186,7 +202,7 @@
     width: 170px;
     margin-left: 423px;
     text-align: left;
-    margin-bottom: 73px;
+    margin-bottom: 64px;
   }
 }
 
@@ -256,9 +272,15 @@
   .additional__inner {
     width: 245px;
     padding-top: 190px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
 
     &::before {
       left: 96px;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
     }
   }
 
@@ -266,6 +288,6 @@
     width: 170px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
   }
 }

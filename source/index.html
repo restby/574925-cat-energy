@@ -39,7 +39,11 @@
           <h2 class="pormo__title">Функциональное<br>
             питание для котов</h2>
           <b class="promo__slogan">Занялся собой? Займись котом!</b>
-          <img class="promo__img" width="280" height="270" src="http://placehold.it/280x270" alt="промо-изображение">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy PRO 500г курица">
+          </picture>
           <a class="promo__link  link  link--promo" href="form.html" aria-label="ссылка на странциа с формой">Подобрать программу</a>
         </div>
       </section>
@@ -114,7 +118,7 @@
         </div>
       </section>
       <div class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper  contacts__wrapper--catalog">
           <div class="contact__inner">
             <p class="contacts__slogan">Приглашаем<br>
             к сотрудничеству<br>
@@ -124,7 +128,11 @@
             Санкт-Петербург</p>
           </div>
           <div class="contacts__map-wrapper">
-            <img class="contacts__map-img" width="320" height="400" src="http://placehold.it/320x400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
           </div>
         </div>
       </div>
