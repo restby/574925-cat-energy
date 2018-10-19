@@ -161,16 +161,20 @@
   }
 
   .example__title {
-    margin: 0 30px;
+    margin: 0;
+    margin-left: 30px;
     font-size: 60px;
-    margin-bottom: 56px;
+    margin-bottom: 65px;
+    padding: 0;
   }
 
   .example__desc {
     margin: 0 30px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
+    padding: 0;
+    padding-right: 37px;
   }
 
   .example__inner {
@@ -183,15 +187,23 @@
 
   .example__list {
     width: 367px;
+    padding: 0;
     margin-bottom: 0;
   }
 
   .example__item {
     width: 162px;
+    padding-bottom: 18px;
+    padding-top: 15px;
   }
 
   .example__item--1 {
+    padding-left: 56px;
     margin-right: 42px;
+  }
+
+  .example__item--2 {
+    padding-left: 28px;
   }
 
   .example__value {
@@ -204,6 +216,7 @@
     background-color: @white-color;
     font-size: 14px;
     line-height: 14px;
+    top: 62px;
     margin-bottom: -5px;
   }
 
@@ -223,7 +236,17 @@
     width: 192px;
     font-size: 20px;
     text-align: right;
+    padding: 0;
+    padding-top: 11px;
     margin-bottom: 0;
+  }
+
+  .example__text span {
+    display: block;
+  }
+
+  .example__text span:first-child {
+    margin-bottom: 9px;
   }
 
   .example__img-list {
@@ -237,7 +260,7 @@
     position: absolute;
     top: 0;
     left: 46px;
-    margin-top: -151px;
+    margin-top: -169px;
   }
 
   .example__img-item--after {
@@ -247,7 +270,7 @@
     position: absolute;
     top: 0;
     left: 384px;
-    margin-top: -151px;
+    margin-top: -169px;
   }
 
   .example__img {
@@ -261,20 +284,20 @@
 
   .example__slider {
     background: linear-gradient(90deg, @background-grey-color 0%, @background-grey-color 50%, @border-color-lighter-alternative 50%, @border-color-lighter-alternative 100%);
-    padding-top: 369px;
+    padding-top: 366px;
     margin-left: 0;
   }
 
   .example__toggle-btn {
     font-size: 20px;
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     border-bottom: 1px dotted @border-color-darker-alternative;
     cursor: pointer;
   }
 
   .example__toggle-btn--prev {
     margin-right: 25px;
-    margin-left: 100px;
+    margin-left: 78px;
   }
 
   .example__bar {
@@ -286,6 +309,7 @@
     margin-right: 22px;
     margin-bottom: 81px;
     position: relative;
+    margin-top: 9px;
   }
 
   .example__toggle {
@@ -316,7 +340,7 @@
   }
 
   .example__toggle-btn--next {
-    margin-right: 100px;
+    margin-right: 79px;
   }
 }
 
@@ -332,7 +356,7 @@
 
   .example__title {
     margin: 0;
-    padding-bottom: 66px;
+    margin-bottom: 77px;
     padding-left: 40px;
     padding-right: 40px;
     background-color: @white-color;
@@ -349,24 +373,22 @@
 
   .example__desc {
     margin: 0;
-    padding-top: 66px;
-    // padding-left: 40px;
+    padding-top: 69px;
     width: 435px;
-    margin-bottom: 71px;
+    margin-bottom: 69px;
   }
 
   .example__inner {
     width: 475px;
     box-sizing: border-box;
     margin: 0;
-    // padding-left: 40px;
     flex-direction: column;
     justify-content: flex-start;
   }
 
   .example__list {
     width: auto;
-    margin-bottom: 62px;
+    margin-bottom: 50px;
   }
 
   .example__field {
@@ -377,14 +399,18 @@
     width: 326px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 75px;
+    margin-bottom: 0;
   }
 
   .example__img-item--before {
-    margin-top: -172px;
+    width: 365px;
+    margin-top: -191px;
+    left: 30px;
   }
 
   .example__img-item--after {
-    margin-top: -172px;
+    margin-top: -191px;
+    width: 266px;
+    left: 368px;
   }
 }

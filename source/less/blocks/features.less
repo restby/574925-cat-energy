@@ -118,7 +118,7 @@
 
 @media (min-width: @tablet-width) {
   .features {
-    margin-bottom: 51px;
+    margin-bottom: 42px;
   }
 
   .features__wrapper {
@@ -130,7 +130,7 @@
 
   .features__item {
     padding: 0;
-    padding-top: 81px;
+    padding-top: 77px;
     padding-left: 52px;
   }
 
@@ -142,7 +142,7 @@
       width: 200px;
       height: 200px;
       top: 92px;
-      left: 462px;
+      left: 446px;
     }
   }
 
@@ -155,6 +155,8 @@
 
   .features__item--pro {
     padding-right: 312px;
+    padding-top: 75px;
+    padding-left: 53px;
 
     &::before {
       width: 200px;
@@ -167,22 +169,31 @@
   .features__img--pro {
     width: 268px;
     height: 112px;
-    top: 135px;
+    top: 134px;
     left: 412px;
   }
 
   .features__title {
     font-size: 36px;
     margin-left: 0;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .features__desc {
     border-bottom: 0;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 51px;
+    margin-bottom: 57px;
     padding: 0;
+  }
+
+  .features__desc--slim {
+    padding-right: 5px;
+  }
+
+  .features__desc--pro {
+    padding-right: 10px;
+    margin-bottom: 57px;
   }
 
   .features__link {
@@ -193,7 +204,14 @@
     padding-right: 190px;
 
     &::after {
-      right: 146px;
+      right: 144px;
+      top: 50%;
+    }
+  }
+
+  .features__item--pro .features__link {
+    &::after {
+      right: 151px;
       top: 50%;
     }
   }
@@ -201,7 +219,7 @@
 
 @media (min-width: @desktop-width) {
   .features {
-    margin-bottom: 79px;
+    margin-bottom: 72px;
   }
 
   .features__wrapper {
@@ -217,7 +235,7 @@
   .features__item {
     width: 570px;
     padding: 0;
-    padding-top: 81px;
+    padding-top: 75px;
     padding-left: 52px;
     padding-right: 53px;
     box-sizing: border-box;
@@ -258,18 +276,18 @@
   }
 
   .features__title {
-    margin-bottom: 79px;
+    margin-bottom: 73px;
     margin-left: 164px;
   }
 
   .features__desc {
-    margin-bottom: 36px;
+    margin-bottom: 33px;
   }
 
   .features__link {
     width: 193px;
     padding-right: 80px;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
 
     &::after {
       right: 37px;
