@@ -4,13 +4,27 @@
 
 .additional__title {
   .reset-ma-pa();
+  box-sizing: border-box;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   margin: 0 auto;
-  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
   padding-top: 28px;
   margin-bottom: 34px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 3px;
+    background-color: @link-color;
+    top: 42px;
+    right: 0;
+  }
 }
 
 .additional__wrapper {
@@ -34,7 +48,7 @@
 }
 
 .additional__item-wrapper {
-  padding-top: 12px;
+  padding-top: 13px;
 }
 
 .additional__item-title {
@@ -44,7 +58,7 @@
   font-weight: 400;
   color: @desc-color;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .additional__table {
@@ -107,7 +121,7 @@
 
 .additional__text {
   width: 170px;
-  margin-left: 49px;
+  margin-left: 54px;
   text-align: center;
   font-family: "Arial", sans-serif;
   color: @white-color;
@@ -121,13 +135,30 @@
   }
 
   .additional__title {
-    width: 708px;
+    width: @tablet-width;
     padding: 0;
-    padding-left: 38px;
+    padding-left: 68px;
     box-sizing: border-box;
     margin-bottom: 81px;
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      width: 327px;
+      height: 3px;
+      top: 23px;
+      right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: @link-color;
+      width: 28px;
+      height: 3px;
+      top: 23px;
+      left: 0;
+    }
   }
 
   .additional__wrapper {
@@ -143,7 +174,9 @@
     border-bottom: 1px solid @border-color;
     border-left: 1px solid @border-color;
     border-right: 1px solid @border-color;
-    padding: 0 38px;
+    padding: 0;
+    padding-left: 38px;
+    padding-right: 36px;
   }
 
   .additional__item:first-child {
@@ -210,13 +243,21 @@
 
 @media (min-width: @desktop-width) {
   .additional {
-    margin-top: -63px;
+    padding-top: 73px;
     margin-bottom: 86px;
   }
 
   .additional__title {
-    width: 1220px;
-    padding: 0;
+    width: @desktop-width;
+    padding-left: 40px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 
   .additional__wrapper {
@@ -252,17 +293,24 @@
     line-height: 20px;
   }
 
+  .additional__item-wrapper {
+    padding-top: 26px;
+    margin-bottom: 23px;
+  }
+
   .additional__table {
-    width: 285px;
+    width: 287px;
   }
 
   .additional__field {
     width: 50%;
     text-align: left;
+    padding-top: 2px;
   }
 
   .additional__value {
     width: 50%;
+    padding-top: 2px;
   }
 
   .additional__link {
@@ -273,7 +321,7 @@
 
   .additional__inner {
     width: 245px;
-    padding-top: 190px;
+    padding-top: 186px;
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
 
     &::before {
@@ -290,6 +338,6 @@
     width: 170px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 42px;
   }
 }
