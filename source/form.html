@@ -77,7 +77,7 @@
             </ul>
             <ul class="programm-list">
               <li class="programm-list__item  programm-list__item--lose">
-                <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-lose" id="programm-lose" aria-label="опция выбора похудение">
+                <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-lose" id="programm-lose" aria-label="опция выбора похудение" checked>
                 <label class="programm-list__label" for="programm-lose">Похудение</label>
               </li>
               <li class="programm-list__item  programm-list__item--gain">
@@ -91,14 +91,17 @@
             </ul>
           </fieldset>
           <fieldset class="form__field  form__field--owner  owner">
-            <legend class="form__legend  owner__legend">Контактные данные (владельца кота)</legend>
+            <legend class="owner__legend">Контактные данные (владельца кота)</legend>
             <ul class="owner__list">
-              <li class="owner__item">
-                <label class="owner__label" for="email">E-mail:*</label>
+              <li class="owner__item  owner__item--email">
+                <label class="owner__label  owner__label--email" for="email">E-mail:*</label>
                 <input class="owner__input  owner__input--email" id="email" type="text" placeholder="kuklachev@gmail.com" aria-label="поле для ввода эл.почты">
+                <svg class="owner__icon  owner__icon--email" xmlns="http://www.w3.org/2000/svg" width="17" height="13">
+                  <use xlink:href="#input-mail"></use>
+                </svg>
               </li>
-              <li class="owner__item">
-                <label class="owner__label" for="phone-number">Телефон:*</label>
+              <li class="owner__item  owner__item--phone">
+                <label class="owner__label  owner__label--phone" for="phone-number">Телефон:*</label>
                 <input class="owner__input  owner__input--phone" id="phone-number" type="text" placeholder="8 (960) 900-60-90" aria-label="поле для ввода номера телефона">
               </li>
             </ul>
@@ -140,7 +143,8 @@
             <p class="contacts__slogan">Приглашаем<br>
             к сотрудничеству<br>
             дилеров!</p>
-            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8<br>
+            <p class="contacts__adress">ул. Большая<br>
+            Конюшенная, д. 19/8<br>
             <br>
             Санкт-Петербург</p>
           </div>
@@ -150,6 +154,7 @@
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
               <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
+            <img class="contacts__map-pin  contacts__map-pin--catatlog" src="img/map-pin.png" alt="маркер на карте">
           </div>
         </div>
       </div>

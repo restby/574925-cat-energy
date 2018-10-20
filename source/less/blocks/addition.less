@@ -1,8 +1,22 @@
 .addition__legend {
+  display: block;
+  width: 100%;
   padding: 0;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 32px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 136px;
+    height: 3px;
+    top: 14px;
+    right: 0;
+    margin-right: -20px;
+    background-color: @link-color;
+  }
 }
 
 .addition__list {
@@ -11,7 +25,16 @@
 }
 
 .addition__item {
-  margin-bottom: 12px;
+  min-height: 30px;
+  margin-bottom: 13px;
+
+  &:nth-child(2) {
+    margin-bottom: 12px;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 12px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -26,13 +49,53 @@
   text-transform: uppercase;
   padding-top: 7px;
   padding-left: 46px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border: 1px solid @border-color;
+    top: 3px;
+    left: 0;
+  }
+}
+
+.addition__input-checkbox:checked + .addition__label {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 16px;
+    top: 10px;
+    left: 5px;
+    background-image: url("../../img/icon-tick.min.svg");
+  }
 }
 
 @media (min-width: @tablet-width) {
   .addition__legend {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
+
+    &::after {
+      width: 446px;
+      top: 23px;
+      margin-right: -66px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      top: 23px;
+      left: 0;
+      margin-left: -72px;
+      background-color: @link-color;
+    }
   }
 
   .addition__list {
@@ -47,6 +110,7 @@
   .addition__item {
     width: 287px;
     margin-bottom: 32px;
+    min-height: 40px;
 
     &:last-child {
       margin-bottom: 32px;
@@ -59,10 +123,31 @@
   }
 
   .addition__label {
-    display: block;
     text-transform: uppercase;
-    padding-top: 7px;
-    padding-left: 46px;
+    padding-top: 13px;
+    padding-left: 57px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 38px;
+      height: 38px;
+      border: 1px solid @border-color;
+      top: 3px;
+      left: 0;
+    }
+  }
+
+  .addition__input-checkbox:checked + .addition__label {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 21px;
+      height: 16px;
+      top: 15px;
+      left: 9px;
+      background-image: url("../../img/icon-tick.min.svg");
+    }
   }
 }
 
