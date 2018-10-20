@@ -27,7 +27,7 @@
 .worksheet-list__input {
   line-height: 18px;
   color: @desc-color;
-  border: 1px solid @border-color;
+  border: 1px solid @border-color-light05;
   box-sizing: border-box;
   padding-top: 12px;
   padding-bottom: 13px;
@@ -38,6 +38,22 @@
     line-height: 18px;
     color: @desc-color-alternative;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    border: 1px solid @border-color;
+  }
+
+  &:focus {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: 2px solid @desc-color-alternative;
+  }
+
+  &:invalid {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: 2px solid @border-color-invalid;
   }
 }
 

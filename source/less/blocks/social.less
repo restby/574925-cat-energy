@@ -18,25 +18,63 @@
 .social__item--insta {
   margin-right: 40px;
   padding-top: 23px;
+
+  &:hover {
+    fill: @link-color;
+  }
 }
 
 .social__item--fb {
   padding-top: 22px;
+
+  &:hover {
+    fill: @link-color;
+  }
 }
 
-.social__item--vk svg {
+.social__icon--vk {
   width: 22px;
   min-height: 12px;
+  fill: @social-icon-color;
 }
 
-.social__item--insta svg {
+.social__icon--insta {
   width: 16px;
   min-height: 16px;
+  fill: @social-icon-color;
 }
 
-.social__item--fb svg {
+.social__icon--fb {
   width: 10px;
   min-height: 19px;
+  fill: @social-icon-color;
+}
+
+.social__link:hover .social__icon--vk {
+  fill: @link-color;
+}
+
+.social__link:hover .social__icon--insta {
+  fill: @link-color;
+}
+
+.social__link:hover .social__icon--fb {
+  fill: @link-color;
+}
+
+.social__link:active .social__icon--vk {
+  opacity: 0.3;
+  fill: @link-color;
+}
+
+.social__link:active .social__icon--insta {
+  opacity: 0.3;
+  fill: @link-color;
+}
+
+.social__link:active .social__icon--fb {
+  opacity: 0.3;
+  fill: @link-color;
 }
 
 @media (min-width: @tablet-width) {

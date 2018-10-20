@@ -99,6 +99,15 @@
   margin: 0 auto;
   margin-bottom: 24px;
   text-align: center;
+
+  &:hover {
+    background-color: @link-color-alternative;
+  }
+
+  &:active {
+    color: @white-color-light03;
+    background-color: @link-color-alternative;
+  }
 }
 
 .catalog__btn {
@@ -157,6 +166,15 @@
   background-color: @background-grey-color;
   text-align: center;
   color: @desc-color-alternative;
+
+  &:hover {
+    background-color: @color-hover-btn;
+  }
+
+  &:active {
+    color: @desc-color-light03;
+    background-color: @color-hover-btn;
+  }
 }
 
 @media (min-width: @tablet-width) {

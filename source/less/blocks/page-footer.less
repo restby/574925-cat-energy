@@ -13,16 +13,26 @@
 
 .page-footer__logo {
   display: block;
-  width: 128px;
+  width: auto;
   box-sizing: border-box;
   margin: 0 auto;
   border-bottom: 1px solid @border-color-lighter;
 }
 
 .page-footer__logo-img {
-  margin-bottom: 28px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
   width: 128px;
   height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: @tablet-width) {

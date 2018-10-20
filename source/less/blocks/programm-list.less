@@ -28,6 +28,10 @@
   padding-left: 46px;
   position: relative;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -37,6 +41,10 @@
     top: 0;
     border: 1px solid @border-color;
     border-radius: 50%;
+  }
+
+  &:hover:not(:checked)::before {
+    border: 1px solid @border-color-darker-checkbox;
   }
 }
 

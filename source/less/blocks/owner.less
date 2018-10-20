@@ -28,6 +28,10 @@
   position: relative;
 }
 
+.owner__item--phone {
+  position: relative;
+}
+
 .owner__item {
   margin-bottom: 13px;
   display: flex;
@@ -46,6 +50,17 @@
   height: 13px;
   top: 16px;
   left: 247px;
+  fill: @desc-color;
+}
+
+.owner__icon--phone {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 247px;
+  fill: @desc-color;
 }
 
 .owner__label {
@@ -55,26 +70,11 @@
   padding-top: 14px;
 }
 
-.owner__label--phone {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    top: 14px;
-    right: 0;
-    margin-right: -199px;
-    background-image: url("../../img/icon-phone.min.svg");
-  }
-}
-
 .owner__input {
   line-height: 18px;
   color: @desc-color;
   text-transform: uppercase;
-  border: 1px solid @border-color-darker;
+  border: 1px solid @border-color-light05;
   box-sizing: border-box;
   padding-top: 13px;
   padding-bottom: 12px;
@@ -86,10 +86,30 @@
     color: @desc-color-alternative;
     text-transform: uppercase;
   }
+
+  &:hover {
+    border: 1px solid @border-color;
+  }
+
+  &:focus {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: 2px solid @desc-color-alternative;
+  }
+
+  &:invalid {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: 2px solid @border-color-invalid;
+  }
 }
 
 .owner__input--email {
   width: 219px;
+}
+
+.owner__input--email:focus + .owner__icon--email {
+  fill: @link-color;
 }
 
 .owner__input--phone {
@@ -131,6 +151,12 @@
   }
 
   .owner__icon--email {
+    top: 20px;
+    left: 594px;
+  }
+
+  .owner__icon--phone {
+    top: 17px;
     left: 594px;
   }
 
@@ -138,14 +164,6 @@
     font-size: 20px;
     padding-top: 17px;
     text-align: left;
-  }
-
-  .owner__label--phone {
-    &::after {
-      top: 17px;
-      right: 0;
-      margin-right: -530px;
-    }
   }
 
   .owner__input {
@@ -205,12 +223,9 @@
     left: 533px;
   }
 
-  .owner__label--phone {
-    &::after {
-      top: 17px;
-      right: 0;
-      margin-right: -468px;
-    }
+  .owner__icon--phone {
+    top: 17px;
+    left: 531px;
   }
 
   .owner__input {

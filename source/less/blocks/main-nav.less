@@ -21,15 +21,18 @@
   display: block;
 }
 
-.main-nav__logo picture {
-  display: block;
-  padding: 0;
-}
-
 .main-nav__logo-img {
   display: block;
   width: 191px;
   height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__list {
@@ -189,6 +192,14 @@
     font-size: 20px;
     color: @white-color;
     padding: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__link--catalog {

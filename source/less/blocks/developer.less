@@ -17,6 +17,19 @@
   padding-top: 9px;
 }
 
+.developer__icon {
+  fill: @social-icon-color;
+
+  &:hover {
+    fill: @link-color;
+  }
+
+  &:active {
+    fill: @link-color;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .developer__wrapper {
     width: 162px;
