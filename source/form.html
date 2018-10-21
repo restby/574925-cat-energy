@@ -64,34 +64,36 @@
           <h1 class="form__title">Подбор прграммы</h1>
           <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <fieldset class="form__field  form__field--data">
-            <ul class="worksheet-list">
-              <li class="worksheet-list__item  worksheet-list__item--name">
-                <label class="worksheet-list__label" for="cat-name">Имя:*</label>
-                <input class="worksheet-list__input  worksheet-list__input--name" type="text" id="cat-name" placeholder="Барсик" aria-label="поле для ввода имени">
-              </li>
-              <li class="worksheet-list__item  worksheet-list__item--weight">
-                <label class="worksheet-list__label" for="cat-weight">Вес (кг):*</label>
-                <input class="worksheet-list__input  worksheet-list__input--weight" type="text" id="cat-weight" placeholder="7" aria-label="поле для ввода веса">
-              </li>
-              <li class="worksheet-list__item  worksheet-list__item--age">
-                <label class="worksheet-list__label" for="cat-age">Возраст (лет):</label>
-                <input class="worksheet-list__input  worksheet-list__input--age" type="text" id="cat-age" placeholder="7" aria-label="поле для ввода возраста">
-              </li>
-            </ul>
-            <ul class="programm-list">
-              <li class="programm-list__item  programm-list__item--lose">
-                <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-lose" id="programm-lose" aria-label="опция выбора похудение" checked>
-                <label class="programm-list__label" for="programm-lose">Похудение</label>
-              </li>
-              <li class="programm-list__item  programm-list__item--gain">
-                <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-gain" id="programm-gain" aria-label="опция выбора набор массы">
-                <label class="programm-list__label" for="programm-gain">Набор массы</label>
-              </li>
-              <li class="programm-list__item  programm-list__item--advice">
-                <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-advice" id="programm-advice" aria-label="опция выбора нужен совет">
-                <label class="programm-list__label" for="programm-advice">Не знаю (нужен ваш совте)</label>
-              </li>
-            </ul>
+            <div class="form__field--data-wrapper">
+              <ul class="worksheet-list">
+                <li class="worksheet-list__item  worksheet-list__item--name">
+                  <label class="worksheet-list__label" for="cat-name">Имя:*</label>
+                  <input class="worksheet-list__input  worksheet-list__input--name" type="text" id="cat-name" placeholder="Барсик" aria-label="поле для ввода имени">
+                </li>
+                <li class="worksheet-list__item  worksheet-list__item--weight">
+                  <label class="worksheet-list__label" for="cat-weight">Вес (кг):*</label>
+                  <input class="worksheet-list__input  worksheet-list__input--weight" type="text" id="cat-weight" placeholder="7" aria-label="поле для ввода веса">
+                </li>
+                <li class="worksheet-list__item  worksheet-list__item--age">
+                  <label class="worksheet-list__label" for="cat-age">Возраст (лет):</label>
+                  <input class="worksheet-list__input  worksheet-list__input--age" type="text" id="cat-age" placeholder="7" aria-label="поле для ввода возраста">
+                </li>
+              </ul>
+              <ul class="programm-list">
+                <li class="programm-list__item  programm-list__item--lose">
+                  <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-lose" id="programm-lose" aria-label="опция выбора похудение" checked>
+                  <label class="programm-list__label" for="programm-lose">Похудение</label>
+                </li>
+                <li class="programm-list__item  programm-list__item--gain">
+                  <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-gain" id="programm-gain" aria-label="опция выбора набор массы">
+                  <label class="programm-list__label" for="programm-gain">Набор массы</label>
+                </li>
+                <li class="programm-list__item  programm-list__item--advice">
+                  <input class="visually-hidden  programm-list__input  programm-list__input-radio" type="radio" name="programm" value="programm-advice" id="programm-advice" aria-label="опция выбора нужен совет">
+                  <label class="programm-list__label" for="programm-advice">Не знаю (нужен ваш совте)</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="form__field  form__field--owner  owner">
             <legend class="owner__legend">Контактные данные (владельца кота)</legend>
@@ -153,6 +155,7 @@
             Конюшенная, д. 19/8<br>
             <br>
             Санкт-Петербург</p>
+            <img class="contacts__map-pin  contacts__map-pin--catatlog" src="img/map-pin.png" alt="маркер на карте">
           </div>
           <div class="contacts__map-wrapper">
             <picture>
@@ -160,7 +163,6 @@
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
               <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
-            <img class="contacts__map-pin  contacts__map-pin--catatlog" src="img/map-pin.png" alt="маркер на карте">
           </div>
         </div>
       </div>
