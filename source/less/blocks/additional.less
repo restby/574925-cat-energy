@@ -1,5 +1,18 @@
 .additional {
   margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 3px;
+    background-color: @green-color;
+    top: 42px;
+    z-index: -1;
+    margin-left: 10%;
+  }
 }
 
 .additional__title {
@@ -14,17 +27,6 @@
   width: 320px;
   padding-top: 28px;
   margin-bottom: 34px;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 53px;
-    height: 3px;
-    background-color: @link-color;
-    top: 42px;
-    right: 0;
-  }
 }
 
 .additional__wrapper {
