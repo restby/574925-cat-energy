@@ -21,23 +21,39 @@
   font-weight: 400;
   color: @desc-color;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding-top: 13px;
 }
 
 .worksheet-list__input {
   line-height: 18px;
   color: @desc-color;
-  border: 1px solid @border-color;
+  border: 1px solid @border-color-light05;
   box-sizing: border-box;
   padding-top: 12px;
   padding-bottom: 13px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
 
   &::placeholder {
     line-height: 18px;
     color: @desc-color-alternative;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    border: 1px solid @border-color;
+  }
+
+  &:focus {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: 2px solid @desc-color-alternative;
+  }
+
+  &:invalid {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: 2px solid @border-color-invalid;
   }
 }
 
@@ -77,6 +93,7 @@
   .worksheet-list__input {
     font-size: 20px;
     line-height: 20px;
+    height: 52px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;

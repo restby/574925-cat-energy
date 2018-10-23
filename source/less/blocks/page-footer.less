@@ -1,26 +1,38 @@
+.page-footer {
+  background-color: @background-grey-color;
+}
+
 .page-footer__wrapper {
   width: @mobile-width;
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: @background-grey-color;
+  padding-top: 39px;
 }
 
 .page-footer__logo {
   display: block;
-  width: 280px;
-  padding-top: 39px;
-  padding-left: 76px;
-  padding-right: 76px;
+  width: auto;
   box-sizing: border-box;
-  border-bottom: 1px solid @border-color-lighter;
   margin: 0 auto;
+  border-bottom: 1px solid @border-color-lighter;
 }
 
 .page-footer__logo-img {
-  margin-bottom: 31px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
   width: 128px;
   height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -29,12 +41,12 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 30px;
-    background-color: @white-color;
+    background-color: @background-grey-color;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-top: 58px;
-    margin-bottom: 58px;
+    padding-top: 57px;
+    padding-bottom: 58px;
   }
 
   .page-footer__logo {
@@ -42,7 +54,7 @@
     margin: 0;
     margin-top: 6px;
     border-bottom: 0;
-    width: 132px;
+    width: auto;
   }
 
   .page-footer__logo-img {
@@ -54,6 +66,7 @@
   .page-footer {
     border-bottom: 1px solid transparent;
     background-color: @background-grey-color;
+    padding-bottom: 52px;
   }
 
   .page-footer__wrapper {
@@ -61,11 +74,13 @@
     padding: 0 40px;
     background-color: @background-grey-color;
     padding-top: 60px;
+    justify-content: flex-start;
   }
 
   .page-footer__logo {
     padding: 0;
     margin: 0;
+    margin-right: 190px;
     margin-top: 4px;
     border-bottom: 0;
     width: 132px;

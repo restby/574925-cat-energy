@@ -18,12 +18,21 @@
 .main-nav__logo {
   margin-right: auto;
   margin-bottom: 16px;
+  display: block;
 }
 
 .main-nav__logo-img {
   display: block;
   width: 191px;
   height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__list {
@@ -37,14 +46,37 @@
 .main-nav__link {
   display: block;
   font-size: 20px;
+  color: @title-black-color;
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 22px;
   padding-bottom: 23px;
-  padding-left: 20px;
   padding-right: 20px;
-  text-align: center;
   box-sizing: border-box;
+}
+
+.main-nav__item--main {
+  padding-left: 122px;
+}
+
+.main-nav__item--catalog {
+  padding-left: 69px;
+}
+
+.main-nav__item--form {
+  padding-left: 70px;
+}
+
+.main-nav__btn--toggle {
+  display: none;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 12px;
+  background-image: url("../../img/icon-close.min.svg");
 }
 
 @media (min-width: @tablet-width) {
@@ -53,21 +85,20 @@
     box-sizing: border-box;
     padding: 0 30px;
     padding-top: 24px;
-    margin: 0 auto;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .main-nav__bar {
-    width: 192px;
+    width: auto;
     border: 0;
     padding: 0;
     display: block;
+    margin-right: 96px;
   }
 
   .main-nav__logo-img {
-    display: block;
     width: 173px;
     height: 58px;
   }
@@ -77,9 +108,8 @@
   }
 
   .main-nav__list {
-    width: 516px;
-    padding-left: 77px;
-    padding-top: 20px;
+    width: 439px;
+    padding-top: 18px;
     display: flex;
     align-items: flex-start;
     box-sizing: border-box;
@@ -90,11 +120,13 @@
   }
 
   .main-nav__item--main {
-    margin-right: 36px;
+    margin-right: 34px;
+    padding-left: 0;
   }
 
   .main-nav__item--catalog {
     margin-right: auto;
+    padding-left: 0;
   }
 
   .main-nav__link {
@@ -104,6 +136,10 @@
     padding: 0;
   }
 
+  .main-nav__item--form {
+    padding-left: 0;
+  }
+
   .main-nav__link--active {
     padding-bottom: 9px;
     border-bottom: 2px solid @link-color;
@@ -111,9 +147,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    background-color: transparent;
+  }
+
   .main-nav__wrapper {
     width: @desktop-width;
-    padding: 0 40px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 54px;
     display: flex;
     align-items: flex-start;
@@ -122,27 +164,50 @@
   }
 
   .main-nav__bar {
-    width: 245px;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .main-nav__list {
-    width: 570px;
-    padding-left: 92px;
-    padding-top: 11px;
+    width: 479px;
+    padding-left: 0;
+    padding-top: 19px;
+    justify-content: flex-end;
   }
 
   .main-nav__item--main {
-    margin-right: 38px;
+    margin-right: 0;
+  }
+
+  .main-nav__item--catalog {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .main-nav__item--form {
+    margin-left: 31px;
   }
 
   .main-nav__link {
     font-size: 20px;
     color: @white-color;
     padding: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__link--catalog {
-    font-size: 20px;
+    color: @title-black-color;
+  }
+
+  .main-nav__link--form {
     color: @title-black-color;
   }
 
@@ -153,5 +218,14 @@
 
   .main-nav__link--catalog.main-nav__link--active {
     border-bottom: 2px solid @link-color;
+  }
+
+  .main-nav__link--form.main-nav__link--active {
+    border-bottom: 2px solid @link-color;
+  }
+
+  .main-nav__logo-img {
+    width: 202px;
+    height: 59px;
   }
 }

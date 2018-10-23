@@ -1,4 +1,7 @@
 .contacts__wrapper {
+  width: @mobile-width;
+  box-sizing: border-box;
+  margin: 0 auto;
   background-color: @white-color;
 }
 
@@ -11,15 +14,11 @@
 }
 
 .contact__inner {
-  width: @mobile-width;
-  box-sizing: border-box;
-  margin: 0 auto;
   padding: 0 20px;
   padding-top: 27px;
   padding-bottom: 28px;
   display: flex;
   align-items: flex-start;
-  position: relative;
 }
 
 .contacts__slogan {
@@ -42,13 +41,12 @@
 
 .contacts__map-wrapper {
   overflow: hidden;
-  margin: 0 auto;
+  position: relative;
 }
 
 .contacts__map-pin {
-  display: none;
   position: absolute;
-  top: 252px;
+  top: 137px;
   left: 132px;
   width: 55px;
   height: 53px;
@@ -62,26 +60,18 @@
 }
 
 .contacts__map-img {
-  display: none;
-  margin: 0 auto;
-  margin-top: -40px;
-}
-
-.contacts__map-wrapper iframe {
   display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: 362px;
+  margin-top: -40px;
+  width: 320px;
+  height: 400px;
 }
 
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
-    width: auto;
-    margin: 0 auto;
+    width: @tablet-width;
   }
 
   .contact__inner {
-    width: @tablet-width;
     padding-left: 71px;
     padding-right: 72px;
     padding-top: 62px;
@@ -110,30 +100,25 @@
   }
 
   .contacts__map-pin {
-    display: none;
-    top: 347px;
+    top: 144px;
     left: 322px;
     width: 124px;
     height: 106px;
   }
 
   .contacts__map-img {
-    display: none;
     margin-top: -6px;
+    display: block;
     width: 767px;
     height: 400px;
-  }
-
-  .contacts__map-wrapper iframe {
-    width: 100%;
-    height: 396px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__wrapper {
     position: relative;
-    width: auto;
+    width: @desktop-width;
+    padding: 0 40px;
     margin: 0;
   }
 
@@ -143,8 +128,7 @@
     position: absolute;
     z-index: 1;
     top: 95px;
-    left: 50%;
-    margin-left: -610px;
+    left: 40px;
     padding: 0;
     padding-top: 62px;
     padding-bottom: 59px;
@@ -170,27 +154,18 @@
   }
 
   .contacts__map-pin {
-    display: none;
-    top: 56px;
+    top: 150px;
     left: 888px;
     width: 124px;
     height: 106px;
   }
 
-  .contacts__map-wrapper {
-    position: relative;
-  }
-
   .contacts__map-img {
-    display: none;
+    margin-top: 0;
+    display: block;
     max-width: none;
     width: 1440px;
     height: 400px;
-    margin-top: 0;
-  }
-
-  .contacts__map-wrapper iframe {
-    width: 100%;
-    height: 400px;
+    margin-left: -110px;
   }
 }

@@ -6,7 +6,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 22px;
+  padding-top: 20px;
   margin-bottom: 22px;
 }
 
@@ -17,9 +17,17 @@
   padding-top: 9px;
 }
 
-.developer__img {
-  width: 27px;
-  height: 34px;
+.developer__icon {
+  fill: @social-icon-color;
+
+  &:hover {
+    fill: @link-color;
+  }
+
+  &:active {
+    fill: @link-color;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -27,6 +35,10 @@
     width: 162px;
     padding: 0;
     margin: 0;
+  }
+
+  .developer__text {
+    padding-top: 7px;
   }
 }
 

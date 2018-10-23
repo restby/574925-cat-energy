@@ -1,5 +1,4 @@
 .social__wrapper {
-  width: 280px;
   border-bottom: 1px solid @border-color-lighter;
 }
 
@@ -7,22 +6,75 @@
   .listreset();
   display: flex;
   align-items: flex-start;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 
 .social__item--vk {
   margin-left: 73px;
   margin-right: 37px;
-  padding-top: 26px;
+  padding-top: 21px;
 }
 
 .social__item--insta {
   margin-right: 40px;
-  padding-top: 24px;
+  padding-top: 23px;
+
+  &:hover {
+    fill: @link-color;
+  }
 }
 
 .social__item--fb {
   padding-top: 22px;
+
+  &:hover {
+    fill: @link-color;
+  }
+}
+
+.social__icon--vk {
+  width: 22px;
+  min-height: 12px;
+  fill: @social-icon-color;
+}
+
+.social__icon--insta {
+  width: 16px;
+  min-height: 16px;
+  fill: @social-icon-color;
+}
+
+.social__icon--fb {
+  width: 10px;
+  min-height: 19px;
+  fill: @social-icon-color;
+}
+
+.social__link:hover .social__icon--vk {
+  fill: @link-color;
+}
+
+.social__link:hover .social__icon--insta {
+  fill: @link-color;
+}
+
+.social__link:hover .social__icon--fb {
+  fill: @link-color;
+}
+
+.social__link:active .social__icon--vk {
+  opacity: 0.3;
+  fill: @link-color;
+}
+
+.social__link:active .social__icon--insta {
+  opacity: 0.3;
+  fill: @link-color;
+}
+
+.social__link:active .social__icon--fb {
+  opacity: 0.3;
+  fill: @link-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,8 +93,8 @@
   }
 
   .social__item--vk {
-    margin-left: 92px;
-    margin-right: 28px;
+    margin-left: 104px;
+    margin-right: 25px;
     padding-top: 8px;
   }
 
@@ -55,12 +107,27 @@
     padding-top: 2px;
   }
 
-  .social__logo {
-    display: block;
+  .social__item--vk svg {
+    width: 36px;
+    min-height: 16px;
+  }
+
+  .social__item--insta svg {
+    width: 23px;
+    min-height: 23px;
+  }
+
+  .social__item--fb svg {
+    width: 14px;
+    min-height: 28px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .social {
+    margin-right: 83px;
+  }
+
   .social__wrapper {
     width: 570px;
   }
