@@ -1,18 +1,5 @@
 .additional {
   margin-bottom: 35px;
-  position: relative;
-  z-index: 1;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 90%;
-    height: 3px;
-    background-color: @green-color;
-    top: 42px;
-    z-index: -1;
-    margin-left: 10%;
-  }
 }
 
 .additional__title {
@@ -22,11 +9,22 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 320px;
+  width: 280px;
   padding-top: 28px;
   margin-bottom: 34px;
+  background-color: @white-color;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 42px;
+    right: 0;
+    margin-right: -20px;
+    height: 3px;
+    width: 53px;
+    background-color: @link-color;
+  }
 }
 
 .additional__wrapper {
@@ -146,30 +144,30 @@
   }
 
   .additional__title {
-    width: @tablet-width;
+    width: 708px;
     padding: 0;
-    padding-left: 68px;
-    padding-right: 20px;
+    padding-left: 38px;
+    padding-right: 36px;
     box-sizing: border-box;
     margin-bottom: 81px;
     font-size: 36px;
     line-height: 36px;
 
     &::after {
-      width: 327px;
-      height: 3px;
       top: 23px;
-      right: 0;
+      margin-right: -30px;
+      width: 327px;
     }
 
     &::before {
       position: absolute;
       content: "";
-      background-color: @link-color;
-      width: 28px;
-      height: 3px;
       top: 23px;
       left: 0;
+      margin-left: -30px;
+      height: 3px;
+      width: 28px;
+      background-color: @link-color;
     }
   }
 
@@ -260,21 +258,36 @@
   }
 
   .additional__title {
-    width: @desktop-width;
-    padding-left: 40px;
+    width: 1220px;
+    padding: 0;
 
     &::after {
       display: none;
+      top: 23px;
+      margin-right: -30px;
+      width: 327px;
     }
 
     &::before {
       display: none;
+      position: absolute;
+      content: "";
+      top: 23px;
+      left: 0;
+      margin-left: -30px;
+      height: 3px;
+      width: 28px;
+      background-color: @link-color;
     }
   }
 
   .additional__wrapper {
     width: @desktop-width;
     padding: 0 40px;
+    display: block;
+  }
+
+  .additional__container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;

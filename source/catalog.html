@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Странциа каталога. HTML Academy: Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -264,61 +267,63 @@
         </div>
       </section>
       <section class="additional">
-        <h2 class="additional__title">Дополнительные товары</h2>
         <div class="additional__wrapper">
-          <ul class="additional__list">
-            <li class="additional__item">
-              <div class="additional__item-wrapper">
-                <h3 class="additional__item-title">Сахарозаменитель</h3>
-                <table class="additional__table">
-                  <tr>
-                    <td class="additional__field">1 упаковка (100 г)</td>
-                    <td class="additional__value">200 Р.</td>
-                  </tr>
-                </table>
-              </div>
-              <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
-            </li>
-            <li class="additional__item">
-              <div class="additional__item-wrapper">
-                <h3 class="additional__item-title">Питьевая вода</h3>
-                <table class="additional__table">
-                  <tr>
-                    <td class="additional__field">5 литров</td>
-                    <td class="additional__value">50 Р.</td>
-                  </tr>
-                </table>
-              </div>
-              <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
-            </li>
-            <li class="additional__item">
-              <div class="additional__item-wrapper">
-                <h3 class="additional__item-title">Молоко</h3>
-                <table class="additional__table">
-                  <tr>
-                    <td class="additional__field">1 литр</td>
-                    <td class="additional__value">100 Р.</td>
-                  </tr>
-                </table>
-              </div>
-              <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
-            </li>
-            <li class="additional__item">
-              <div class="additional__item-wrapper">
-                <h3 class="additional__item-title">Витамины</h3>
-                <table class="additional__table">
-                  <tr>
-                    <td class="additional__field">1 упаковка (30 г)</td>
-                    <td class="additional__value">300 Р.</td>
-                  </tr>
-                </table>
-              </div>
-              <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
-            </li>
-          </ul>
-          <div class="additional__inner">
-            <p class="additional__text">Закажите все<br>
-            и получите чехол для кота в подарок!</p>
+          <h2 class="additional__title">Дополнительные товары</h2>
+          <div class="additional__container">
+            <ul class="additional__list">
+              <li class="additional__item">
+                <div class="additional__item-wrapper">
+                  <h3 class="additional__item-title">Сахарозаменитель</h3>
+                  <table class="additional__table">
+                    <tr>
+                      <td class="additional__field">1 упаковка (100 г)</td>
+                      <td class="additional__value">200 Р.</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              </li>
+              <li class="additional__item">
+                <div class="additional__item-wrapper">
+                  <h3 class="additional__item-title">Питьевая вода</h3>
+                  <table class="additional__table">
+                    <tr>
+                      <td class="additional__field">5 литров</td>
+                      <td class="additional__value">50 Р.</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              </li>
+              <li class="additional__item">
+                <div class="additional__item-wrapper">
+                  <h3 class="additional__item-title">Молоко</h3>
+                  <table class="additional__table">
+                    <tr>
+                      <td class="additional__field">1 литр</td>
+                      <td class="additional__value">100 Р.</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              </li>
+              <li class="additional__item">
+                <div class="additional__item-wrapper">
+                  <h3 class="additional__item-title">Витамины</h3>
+                  <table class="additional__table">
+                    <tr>
+                      <td class="additional__field">1 упаковка (30 г)</td>
+                      <td class="additional__value">300 Р.</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="additional__link  link" href="#" aria-label="ссылка для заказа">Заказать</a>
+              </li>
+            </ul>
+            <div class="additional__inner">
+              <p class="additional__text">Закажите все<br>
+              и получите чехол для кота в подарок!</p>
+            </div>
           </div>
         </div>
       </section>
@@ -340,6 +345,7 @@
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
               <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858715776165!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1540219008611" width="320" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>

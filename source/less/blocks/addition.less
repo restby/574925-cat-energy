@@ -145,21 +145,25 @@
       left: 0;
     }
   }
-
-  .addition__input-checkbox:checked + .addition__label {
-    &::after {
-      position: absolute;
-      content: "";
-      width: 21px;
-      height: 16px;
-      top: 15px;
-      left: 9px;
-      background-image: url("../../img/icon-tick.min.svg");
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .addition__legend {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 55px;
+
+    &::after {
+      width: 1078px;
+      top: 23px;
+      margin-right: -110px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
   .addition__item {
     width: 245px;
     margin-right: 80px;
