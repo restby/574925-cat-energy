@@ -107,11 +107,11 @@
 }
 
 .example__img {
-  display: block;
+  display: none;
 }
 
-.example__img--after {
-  display: none;
+.example__img--show {
+  display: block;
 }
 
 .example__slider {
@@ -128,6 +128,11 @@
   padding: 0;
   display: block;
   background-color: transparent;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .example__toggle-btn--prev {
@@ -141,11 +146,24 @@
   border: 1px solid @border-color;
   margin-right: 18px;
   margin-top: 2px;
-  padding: 3px 5px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .example__toggle {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  width: 35px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: @link-color;
+}
+
+.example__toggle--next {
+  position: absolute;
+  left: 40px;
+  top: 3px;
   width: 35px;
   height: 6px;
   border-radius: 10px;
@@ -296,6 +314,7 @@
   }
 
   .example__img {
+    display: block;
     max-width: none;
   }
 

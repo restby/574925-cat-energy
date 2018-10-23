@@ -1,3 +1,7 @@
+.example {
+  background-color: @background-grey-color;
+}
+
 .example__wrapper {
   background-color: @background-grey-color;
   width: @mobile-width;
@@ -124,6 +128,11 @@
   padding: 0;
   display: block;
   background-color: transparent;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .example__toggle-btn--prev {
@@ -155,9 +164,16 @@
   }
 
   .example__wrapper {
-    width: @tablet-width;
+    width: auto;
     background-color: @white-color;
     padding: 0;
+  }
+
+  .example__title-wrapper {
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
 
   .example__title {
@@ -165,24 +181,27 @@
     font-size: 60px;
     margin-bottom: 65px;
     padding: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+  }
+
+  .example__col--right {
+    background: linear-gradient(90deg, @background-grey-color 0%, @background-grey-color 50%, @border-color-lighter-alternative 50%, @border-color-lighter-alternative 100%);
   }
 
   .example__desc {
-    margin: 0;
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
-    padding: 0;
-    padding-left: 30px;
-    padding-right: 67px;
   }
 
   .example__inner {
-    margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -255,6 +274,10 @@
 
   .example__img-list {
     position: relative;
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
     margin-bottom: 0;
   }
 
@@ -287,9 +310,12 @@
   }
 
   .example__slider {
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
     background: linear-gradient(90deg, @background-grey-color 0%, @background-grey-color 50%, @border-color-lighter-alternative 50%, @border-color-lighter-alternative 100%);
     padding-top: 366px;
-    margin-left: 0;
   }
 
   .example__toggle-btn {
@@ -309,7 +335,7 @@
 
   .example__toggle-btn--prev {
     margin-right: 25px;
-    margin-left: 78px;
+    margin-left: 68px;
   }
 
   .example__bar {
@@ -318,7 +344,7 @@
     border-radius: 10px;
     background-color: @border-color-else;
     border: 0;
-    margin-right: 22px;
+    margin-right: 19px;
     margin-bottom: 81px;
     position: relative;
     margin-top: 9px;
@@ -328,7 +354,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -16px;
+    margin-left: -18px;
     margin-top: -16px;
     width: 32px;
     height: 32px;
@@ -361,17 +387,21 @@
   }
 
   .example__toggle-btn--next {
-    margin-right: 79px;
+    margin-right: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example__wrapper {
-    width: @desktop-width;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
     background-color: @white-color;
-    margin-bottom: 0;
+  }
+
+  .example__title-wrapper {
+    width: @desktop-width;
+    padding: 0 40px;
   }
 
   .example__title {
@@ -382,22 +412,32 @@
     background-color: @white-color;
   }
 
+  .example__container {
+    background: linear-gradient(90deg, @background-grey-color 0%, @background-grey-color 78%, @border-color-lighter-alternative 78%, @border-color-lighter-alternative 100%);
+  }
+
   .example__group-col {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
     display: flex;
     align-items: flex-start;
-    background-color: @background-grey-color;
+    background-color: none;
   }
 
   .example__col--left {
     width: 570px;
     padding-left: 0;
     margin-left: auto;
+    margin-right: 0;
     box-sizing: border-box;
   }
 
   .example__col--right {
     width: 650px;
     margin-right: auto;
+    margin-left: 0;
   }
 
   .example__desc {
@@ -455,7 +495,8 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 365px;
-    background: linear-gradient(90deg, @background-grey-color 0%, @background-grey-color 56%, @border-color-lighter-alternative 56%, @border-color-lighter-alternative 100%);
+    // background: none;
+    background: linear-gradient(90deg, @background-grey-color 0%, @background-grey-color 365px, @border-color-lighter-alternative 365px, @border-color-lighter-alternative 100%);
   }
 
   .example__toggle-btn--prev {
