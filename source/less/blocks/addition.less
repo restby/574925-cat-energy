@@ -76,8 +76,8 @@
     content: "";
     width: 21px;
     height: 16px;
-    top: 14px;
-    left: 10px;
+    top: 10px;
+    left: 5px;
     background-image: url("../../img/icon-tick.min.svg");
   }
 }
@@ -143,6 +143,18 @@
       border: 1px solid @border-color;
       top: 3px;
       left: 0;
+    }
+  }
+
+  .addition__input-checkbox:checked + .addition__label {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 21px;
+      height: 16px;
+      top: 15px;
+      left: 10px;
+      background-image: url("../../img/icon-tick.min.svg");
     }
   }
 }
