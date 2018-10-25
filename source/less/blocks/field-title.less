@@ -1,0 +1,56 @@
+.field-title {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100vw;
+    top: 14px;
+    right: 0;
+    margin-right: -20px;
+    background-color: @link-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .field-title {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 23px;
+      margin-right: -66px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 100vw;
+      top: 23px;
+      left: 0;
+      margin-left: -72px;
+      background-color: @link-color;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-title {
+    &::after {
+      top: 23px;
+      margin-right: -110px;
+    }
+
+    &::before {
+      top: 23px;
+      left: 0;
+      margin-left: -110px;
+    }
+  }
+}
