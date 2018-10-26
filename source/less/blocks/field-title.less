@@ -16,6 +16,12 @@
   }
 }
 
+.field-title--form-fix {
+  &::after {
+    margin-left: 46px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .field-title {
     font-size: 36px;
@@ -23,7 +29,6 @@
 
     &::after {
       top: 23px;
-      /**/
       margin-left: 40px;
     }
 
@@ -34,10 +39,20 @@
       width: 100vw;
       top: 23px;
       background-color: @link-color;
-      // margin-right: 20px;
-      /**/
       right: 100%;
       margin-right: 41px;
+    }
+  }
+
+  .field-title--catalog-fix {
+    &::before {
+      margin-right: 2px;
+    }
+  }
+
+  .field-title--form-fix {
+    &::after {
+      margin-left: 44px;
     }
   }
 }
@@ -50,7 +65,12 @@
 
     &::before {
       top: 23px;
-      // right: 100%;
+    }
+  }
+
+  .field-title--catalog-fix {
+    &::before {
+      margin-right: 40px;
     }
   }
 }
