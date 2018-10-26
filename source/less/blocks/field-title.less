@@ -1,0 +1,76 @@
+.field-title {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100vw;
+    top: 14px;
+    background-color: @link-color;
+    margin-left: 22px;
+  }
+}
+
+.field-title--form-fix {
+  &::after {
+    margin-left: 46px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .field-title {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 23px;
+      margin-left: 40px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 100vw;
+      top: 23px;
+      background-color: @link-color;
+      right: 100%;
+      margin-right: 41px;
+    }
+  }
+
+  .field-title--catalog-fix {
+    &::before {
+      margin-right: 2px;
+    }
+  }
+
+  .field-title--form-fix {
+    &::after {
+      margin-left: 44px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-title {
+    &::after {
+      top: 23px;
+    }
+
+    &::before {
+      top: 23px;
+    }
+  }
+
+  .field-title--catalog-fix {
+    &::before {
+      margin-right: 40px;
+    }
+  }
+}
