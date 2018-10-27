@@ -7,6 +7,13 @@ var exampleImgPrev = document.querySelector('.example__img--before');
 var exampleImgNext = document.querySelector('.example__img--after');
 var exampleToggle = document.querySelector('.example__toggle');
 
+var mapPin = document.querySelector('.contacts__map-pin');
+var mapStatic = document.querySelector('.contacts__map-img');
+var mapInteractive = document.querySelector('.contacts__map-interactive');
+
+mapPin.classList.remove('contacts__map-pin--nojs');
+mapStatic.classList.remove('contacts__map-img--nojs');
+mapInteractive.classList.remove('contacts__map-interactive--nojs');
 
 menuBtn.classList.remove('main-nav__btn--nojs');
 menuList.classList.remove('main-nav__list--nojs');
